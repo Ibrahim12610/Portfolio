@@ -76,14 +76,17 @@ export function Portrait({ src, name }: { src: string; name: string }) {
         onFocus={() => setAwake(true)}
         onBlur={rest}
         onClick={sayHi}
-        className="group relative block aspect-square w-[clamp(10.5rem,42vw,24rem)] cursor-pointer rounded-full focus-visible:outline-none"
-        style={{
-          transform: still
-            ? undefined
-            : `perspective(900px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
-          transition: awake ? "transform 90ms linear" : "transform 480ms ease",
-        }}
+        className="cursor-cyber group relative block aspect-square w-[clamp(10.5rem,42vw,24rem)] rounded-full focus-visible:outline-none"
       >
+        <span
+          className="pointer-events-none absolute inset-0"
+          style={{
+            transform: still
+              ? undefined
+              : `perspective(900px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
+            transition: awake ? "transform 90ms linear" : "transform 480ms ease",
+          }}
+        >
         <span
           aria-hidden
           className="pointer-events-none absolute -inset-3 rounded-full border border-foreground/15"
@@ -130,6 +133,7 @@ export function Portrait({ src, name }: { src: string; name: string }) {
           />
         </span>
         <span className="pointer-events-none absolute inset-0 rounded-full ring-2 ring-transparent group-focus-visible:ring-mark" />
+        </span>
       </button>
       {greeting ? (
         <p

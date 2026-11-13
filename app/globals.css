@@ -10,7 +10,7 @@
   --font-sans: var(--font-barlow), "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-barlow), "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: var(--font-display-family), "Bodoni Moda", "Times New Roman", serif;
+  --font-lol: var(--font-lol-family), Cinzel, "Times New Roman", serif;
   --color-mark: #d23639;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -75,6 +75,7 @@
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
   --radius: 0px;
+  --cursor-cyber: url("/cursors/cyberware.png") 16 10, auto;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -126,17 +127,26 @@
   html {
     @apply font-sans;
     color-scheme: dark;
-    cursor: url("/cursors/cyberware.png") 7 4, crosshair;
+    cursor: var(--cursor-cyber);
   }
   body {
     @apply bg-background text-foreground;
   }
   a,
+  a:hover,
+  a:active,
   button,
+  button:hover,
+  button:active,
   [role="button"],
+  [role="button"]:hover,
+  [role="button"]:active,
   label,
-  summary {
-    cursor: url("/cursors/cyberware.png") 7 4, crosshair;
+  summary,
+  .cursor-cyber,
+  .cursor-cyber:hover,
+  .cursor-cyber:active {
+    cursor: var(--cursor-cyber) !important;
   }
   ::selection {
     background: #d23639;
@@ -145,8 +155,11 @@
 }
 
 @layer utilities {
-  .cursor-pointer {
-    cursor: url("/cursors/cyberware.png") 7 4, crosshair;
+  .cursor-pointer,
+  .cursor-cyber,
+  .cursor-cyber:hover,
+  .cursor-cyber:active {
+    cursor: var(--cursor-cyber) !important;
   }
 }
 

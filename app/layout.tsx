@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Barlow, Bodoni_Moda } from "next/font/google";
+import { Barlow, Cinzel } from "next/font/google";
 import { ModalSlot } from "@/components/modal-slot";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -13,10 +13,10 @@ const barlow = Barlow({
   variable: "--font-barlow",
 });
 
-const display = Bodoni_Moda({
+const lol = Cinzel({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-display-family",
+  weight: ["700"],
+  variable: "--font-lol-family",
 });
 
 const description = site.profile.about[0] ?? site.profile.role;
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${barlow.variable} ${display.variable} h-full antialiased`}
+      className={`${barlow.variable} ${lol.variable} h-full antialiased`}
     >
       <body className="flex min-h-dvh flex-col bg-background text-foreground">
         <a

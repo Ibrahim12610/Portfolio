@@ -23,7 +23,7 @@ export default function ResumePage() {
         {profile.name}
         <span className="text-mark">.</span>
       </h1>
-      <p className="mt-5 font-display text-[clamp(1.45rem,2.4vw,1.9rem)] font-bold leading-none text-foreground">
+      <p className="mt-5 text-base font-light text-muted-foreground">
         {profile.role}
       </p>
       {contactBits.length > 0 ? (
