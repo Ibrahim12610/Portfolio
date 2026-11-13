@@ -58,8 +58,9 @@ export const site = {
     disciplines: ["Gameplay designer", "Level designer"],
     portrait: "/ibrahim.jpg",
     about: [
-      "This about section is ready for a short bio. Two or three sentences is the right length: what you do now, where you have been, and what you want the work to show.",
-      "Phrases you wrap in the content file are set **heavier**, the way studio names and project titles read on the reference site. **Replace these sentences** when you send your own.",
+      "I'm a game designer on **Storm Frame Zero** at **Shadows Optional**. Alongside that, I'm building **CoilBound** with an indie team. It's an ongoing project, and a demo is coming to Steam in the coming months.",
+      "I'm graduating from the **University of Houston** with a computer science degree focused on game design and development. I previously researched procedural animation, and as a teaching assistant I mentor students while they produce games.",
+      "I care about game development and the community around it. I founded **Coog Interactive** to grow that community in Houston, and my goal is to make games that become global phenomena and show how much this industry matters to culture.",
     ],
     email: "faisalibrahim610@gmail.com",
     phone: "",
