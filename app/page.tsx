@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ProjectList } from "@/components/project-list";
 import { RichText } from "@/components/rich-text";
 import { SectionLabel } from "@/components/section-label";
@@ -40,15 +41,27 @@ export default function HomePage() {
 
         <section id="about" className="mt-24 scroll-mt-24 md:mt-32">
           <SectionLabel>About</SectionLabel>
-          <div className="mt-6 flex max-w-xl flex-col gap-5">
-            {site.profile.about.map((paragraph) => (
-              <p
-                key={paragraph}
-                className="text-[17px] font-light leading-8 md:text-lg md:leading-9"
-              >
-                <RichText text={paragraph} />
-              </p>
-            ))}
+          <div className="mt-8 flex items-start gap-5 sm:gap-10 md:gap-14">
+            <div className="flex min-w-0 max-w-xl flex-col gap-5">
+              {site.profile.about.map((paragraph) => (
+                <p
+                  key={paragraph}
+                  className="text-[17px] font-light leading-8 md:text-lg md:leading-9"
+                >
+                  <RichText text={paragraph} />
+                </p>
+              ))}
+            </div>
+            <figure className="relative aspect-square w-28 shrink-0 overflow-hidden bg-[#f3f0ea] sm:w-44 md:w-64">
+              <Image
+                src={site.profile.portrait}
+                alt="Ibrahim Faisal"
+                fill
+                priority
+                sizes="(min-width: 768px) 256px, 176px"
+                className="object-cover"
+              />
+            </figure>
           </div>
         </section>
 

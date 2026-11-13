@@ -51,11 +51,12 @@ export type ResumeSchool = {
 export const site = {
   profile: {
     name: "Ibrahim Faisal",
-    greeting: "Hello,\nI'm",
+    greeting: "Hi,\nI'm",
     month: "Nov",
     year: "2026",
-    role: "Your current role",
-    disciplines: ["Discipline one", "Discipline two"],
+    role: "Game designer",
+    disciplines: ["Gameplay designer", "Level designer"],
+    portrait: "/ibrahim.jpg",
     about: [
       "This about section is ready for a short bio. Two or three sentences is the right length: what you do now, where you have been, and what you want the work to show.",
       "Phrases you wrap in the content file are set **heavier**, the way studio names and project titles read on the reference site. **Replace these sentences** when you send your own.",
