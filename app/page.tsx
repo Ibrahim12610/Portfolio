@@ -22,13 +22,7 @@ export default function HomePage() {
           </span>
         </h1>
 
-        <p className="mt-12 text-[clamp(1.8rem,4vw,3rem)] font-light leading-none tracking-[0.12em] uppercase">
-          {site.profile.month}
-          <span className="ml-4 text-[0.62em] tracking-[0.16em]">
-            {site.profile.year}
-          </span>
-        </p>
-        <p className="mt-5 text-[clamp(1.2rem,2vw,1.55rem)] font-light leading-none tracking-[0.04em] text-foreground">
+        <p className="mt-10 text-[clamp(1.2rem,2vw,1.55rem)] font-light leading-none tracking-[0.04em] text-foreground">
           {site.profile.role}
         </p>
         {site.profile.disciplines.length > 0 ? (
