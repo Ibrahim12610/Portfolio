@@ -61,14 +61,16 @@ export const site = {
       "This about section is ready for a short bio. Two or three sentences is the right length: what you do now, where you have been, and what you want the work to show.",
       "Phrases you wrap in the content file are set **heavier**, the way studio names and project titles read on the reference site. **Replace these sentences** when you send your own.",
     ],
-    email: "hello@example.com",
+    email: "faisalibrahim610@gmail.com",
     phone: "",
     location: "",
     contactNote:
-      "Replace this with a sentence about what you are open to. The address below is the one people will write.",
+      "I'm always looking to build new relationships, meet more people, and find new opportunities. I look forward to hearing from you.",
     links: [
-      { label: "LinkedIn", href: "https://example.com/linkedin" },
-      { label: "GitHub", href: "https://example.com/github" },
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/ibrahim-faisal-475a74292/",
+      },
     ],
   },
   resume: {

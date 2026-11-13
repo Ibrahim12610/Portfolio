@@ -21,7 +21,7 @@ export default function ContactPage() {
   return (
     <main className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8 md:py-20">
       <h1 className="text-[clamp(2.7rem,8vw,5.5rem)] font-light uppercase leading-[0.92] tracking-[0.045em]">
-        Hello
+        Reaching Me
         <span className="text-mark">.</span>
       </h1>
       <p className="mt-8 max-w-xl text-[17px] font-light leading-8 md:text-lg">
