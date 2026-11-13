@@ -21,7 +21,7 @@ export function SiteHeader() {
   const active = currentTab(pathname);
 
   return (
-    <header className="sticky top-0 z-30 border-b border-border bg-white/95 backdrop-blur-sm print:hidden">
+    <header className="sticky top-0 z-30 border-b border-border bg-black/90 backdrop-blur-sm print:hidden">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-8">
         <Link
           href="/"

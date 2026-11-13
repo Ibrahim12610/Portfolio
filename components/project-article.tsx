@@ -68,7 +68,7 @@ export function ProjectArticle({
       ) : null}
 
       <figure className="mt-12">
-        <div className="relative aspect-[16/9] overflow-hidden bg-[#f3f0ea]">
+        <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
           <Image
             src={project.cover.src}
             alt={project.cover.alt}
@@ -127,7 +127,7 @@ export function ProjectArticle({
             ))}
             {section.image ? (
               <figure className="mt-6">
-                <div className="relative aspect-[16/9] overflow-hidden bg-[#f3f0ea]">
+                <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
                   <Image
                     src={section.image.src}
                     alt={section.image.alt}

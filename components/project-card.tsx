@@ -12,7 +12,7 @@ export function ProjectCard({
   return (
     <article>
       <Link href={href} className="group block">
-        <div className="relative aspect-[16/9] overflow-hidden bg-[#f3f0ea]">
+        <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
           <Image
             src={project.cover.src}
             alt=""

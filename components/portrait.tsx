@@ -108,7 +108,7 @@ export function Portrait({ src, name }: { src: string; name: string }) {
           <span className="absolute top-0 left-1/2 size-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-mark" />
         </span>
         <span
-          className="relative block size-full overflow-hidden rounded-full bg-[#f3f0ea] shadow-[0_0_0_0_rgba(210,54,57,0)] transition-shadow duration-300 group-hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.45)] group-focus-visible:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.45)]"
+          className="relative block size-full overflow-hidden rounded-full bg-[#141414] shadow-[0_0_0_0_rgba(252,238,10,0)] transition-shadow duration-300 group-hover:shadow-[0_18px_40px_-18px_rgba(252,238,10,0.35)] group-focus-visible:shadow-[0_18px_40px_-18px_rgba(252,238,10,0.35)]"
           style={{
             transform: still ? undefined : `rotate(${spins * 360}deg)`,
             transition: "transform 900ms cubic-bezier(.16,.84,.24,1)",

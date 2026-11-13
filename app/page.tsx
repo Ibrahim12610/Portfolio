@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <main>
       <div className="mx-auto w-full max-w-6xl px-5 pt-16 pb-8 sm:px-8 sm:pt-24 md:pt-28">
-        <h1 className="max-w-5xl text-[clamp(2.7rem,8vw,5.5rem)] font-light uppercase leading-[0.92] tracking-[0.045em]">
+        <h1 className="max-w-5xl font-display text-[clamp(2.7rem,8vw,5.5rem)] font-medium uppercase leading-[0.92] tracking-[0.03em]">
           {greeting.map((line) => (
             <span key={line} className="block">
               {line}
@@ -22,17 +22,17 @@ export default function HomePage() {
           </span>
         </h1>
 
-        <p className="mt-12 text-[clamp(1.8rem,4vw,3rem)] font-light leading-none tracking-[0.12em] uppercase">
+        <p className="mt-12 font-display text-[clamp(1.8rem,4vw,3rem)] font-medium leading-none tracking-[0.08em] uppercase">
           {site.profile.month}
           <span className="ml-4 text-[0.62em] tracking-[0.16em]">
             {site.profile.year}
           </span>
         </p>
-        <p className="mt-4 max-w-md text-base font-light leading-7 text-muted-foreground">
+        <p className="mt-6 font-display text-[clamp(1.6rem,2.8vw,2.15rem)] font-bold leading-none tracking-[0.01em] text-foreground">
           {site.profile.role}
         </p>
         {site.profile.disciplines.length > 0 ? (
-          <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-[11px] font-medium uppercase tracking-[0.18em]">
+          <ul className="mt-4 flex flex-wrap gap-x-8 gap-y-2 font-display text-[clamp(1.08rem,1.8vw,1.4rem)] font-semibold uppercase leading-none tracking-[0.05em] text-foreground">
             {site.profile.disciplines.map((item) => (
               <li key={item}>{item}</li>
             ))}
