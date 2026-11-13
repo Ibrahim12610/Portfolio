@@ -120,63 +120,22 @@ export const site = {
   },
   work: [
     {
-      slug: "harbor-line",
-      title: "Harbor Line",
-      subtitle: "A co-op expedition about reading the weather before you move.",
+      slug: "storm-frame-zero",
+      title: "Storm Frame Zero",
+      subtitle:
+        "A co-op space third-person shooter where you fight to protect Earth from Jupiter.",
       cover: {
         src: "/covers/harbor.svg",
         alt: "A red sun sitting on a black horizon, with three pale posts in the foreground.",
       },
-      role: "Lead systems designer",
-      engine: "Unreal Engine 5",
-      platform: "PC",
-      developmentTime: "12 weeks",
-      teamSize: "6",
-      summary:
-        "Harbor Line is a two-player expedition along a flooded coast. Sample case study: this page shows how a work project reads once someone clicks the image. I owned the weather system, the shared navigation tools, and the encounter pacing from the first dock to the last lighthouse.",
-      designGoals: [
-        "Make the forecast something you act on, not a meter you ignore.",
-        "Keep both players necessary without locking one of them into a support role.",
-        "Let a failed reading cost time, not the whole run.",
-      ],
-      sections: [
-        {
-          heading: "What I owned",
-          paragraphs: [
-            "The coast is a sequence of docks, channels, and one lighthouse. Players share a boat and a paper chart. One person reads the sky. The other commits the boat to a line. Neither view is complete on its own.",
-            "I wrote the rules for the forecast, the cost of a bad line, and the way encounters escalate if you arrive late. Programming paired on the prototype. I stayed in the tuning and the encounter sketches.",
-          ],
-        },
-        {
-          heading: "The forecast",
-          paragraphs: [
-            "Early builds put a countdown on the HUD. Players waited it out. The second pass removed the number and left three readable signs: wind on the water, birds leaving a spit, and the color of the near cloud.",
-          ],
-          image: {
-            src: "/covers/harbor-plan.svg",
-            alt: "A plan of the route: dock, channel, spit, and lighthouse, with a red path between them.",
-            caption: "Route plan. The red line is the committed heading.",
-          },
-          bullets: [
-            "Signs update on a shared clock, so both players see the same sky.",
-            "A reading is a choice. You lock a heading, then live with the crossing time.",
-            "The lighthouse is the only place a bad reading can be repaired.",
-          ],
-        },
-        {
-          heading: "Iteration",
-          paragraphs: [
-            "Playtests kept stalling at the second channel. The signs were true, but they were too far apart to compare. I moved the bird spit into the same view as the cloud bank and cut one optional inlet that nobody used.",
-            "The last week went into the recovery. Missing the lighthouse used to end the run. It now beaches you, costs the chart a tear, and sends you back with a worse boat. Failure stays legible.",
-          ],
-        },
-        {
-          heading: "Outcome",
-          paragraphs: [
-            "Pairs started talking about the sky before they talked about the enemies. That was the result I was tuning for. The sample stops here. Your version can add footage, a build, or the metric you actually moved.",
-          ],
-        },
-      ],
+      role: "Game designer",
+      engine: "",
+      platform: "",
+      developmentTime: "",
+      teamSize: "",
+      summary: "",
+      designGoals: [],
+      sections: [],
     },
     {
       slug: "red-current",
