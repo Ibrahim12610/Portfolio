@@ -28,11 +28,11 @@ export default function HomePage() {
             {site.profile.year}
           </span>
         </p>
-        <p className="mt-6 text-[clamp(1.6rem,2.8vw,2.15rem)] font-bold leading-none tracking-[0.01em] text-foreground">
+        <p className="mt-5 text-[clamp(1.2rem,2vw,1.55rem)] font-light leading-none tracking-[0.04em] text-foreground">
           {site.profile.role}
         </p>
         {site.profile.disciplines.length > 0 ? (
-          <ul className="mt-4 flex flex-wrap gap-x-8 gap-y-2 text-[clamp(1.08rem,1.8vw,1.4rem)] font-semibold uppercase leading-none tracking-[0.05em] text-foreground">
+          <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-[clamp(0.95rem,1.4vw,1.1rem)] font-light uppercase leading-none tracking-[0.08em] text-foreground">
             {site.profile.disciplines.map((item) => (
               <li key={item}>{item}</li>
             ))}
