@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+  <rect width="1600" height="900" fill="#f7f4ee"/>
+  <g fill="none" stroke="#161616" stroke-width="3">
+    <rect x="120" y="160" width="280" height="180"/>
+    <rect x="520" y="220" width="220" height="140"/>
+    <rect x="900" y="140" width="180" height="220"/>
+    <rect x="1180" y="360" width="260" height="200"/>
+  </g>
+  <path d="M260 340 C 420 420, 560 300, 630 360 S 900 420, 990 280 S 1240 300, 1310 460" fill="none" stroke="#d23639" stroke-width="8"/>
+  <g fill="#161616" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="3">
+    <text x="140" y="200">DOCK</text>
+    <text x="540" y="260">CHANNEL</text>
+    <text x="920" y="180">SPIT</text>
+    <text x="1200" y="400">LIGHT</text>
+  </g>
+</svg>
