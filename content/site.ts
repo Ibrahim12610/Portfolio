@@ -23,6 +23,8 @@ export type Project = {
   title: string;
   subtitle: string;
   cover: ProjectImage;
+  /** Shown on the home card only. The project page keeps `cover`. */
+  cardCover?: ProjectImage;
   role: string;
   engine: string;
   platform: string;
@@ -127,6 +129,10 @@ export const site = {
       cover: {
         src: "/covers/harbor.svg",
         alt: "A red sun sitting on a black horizon, with three pale posts in the foreground.",
+      },
+      cardCover: {
+        src: "/covers/storm-frame-zero.png",
+        alt: "Stormframe Zero key art: a red mech beside the title and the line When Calisto cries, so do the stars.",
       },
       role: "Game designer",
       engine: "Unity",

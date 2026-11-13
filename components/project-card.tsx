@@ -9,13 +9,15 @@ export function ProjectCard({
   project: Project;
   href: string;
 }) {
+  const image = project.cardCover ?? project.cover;
+
   return (
     <article>
       <Link href={href} className="group block">
         <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
           <Image
-            src={project.cover.src}
-            alt=""
+            src={image.src}
+            alt={project.cardCover ? image.alt : ""}
             fill
             unoptimized
             sizes="(min-width: 640px) 50vw, 100vw"
