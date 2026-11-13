@@ -50,7 +50,7 @@ export type ResumeSchool = {
 
 export const site = {
   profile: {
-    name: "Your Name",
+    name: "Ibrahim Faisal",
     greeting: "Hello,\nI'm",
     month: "Nov",
     year: "2026",

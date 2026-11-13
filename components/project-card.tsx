@@ -18,15 +18,15 @@ export function ProjectCard({
             alt=""
             fill
             unoptimized
-            sizes="(min-width: 1152px) 1088px, 100vw"
+            sizes="(min-width: 640px) 50vw, 100vw"
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
           />
         </div>
         <div className="mt-5 max-w-3xl">
-          <h3 className="text-[clamp(1.6rem,3vw,2.4rem)] font-medium uppercase leading-none tracking-[0.04em]">
+          <h3 className="text-[clamp(1.25rem,2vw,1.7rem)] font-medium uppercase leading-none tracking-[0.04em]">
             {project.title}
           </h3>
-          <p className="mt-3 text-base font-light leading-7 text-muted-foreground">
+          <p className="mt-3 text-sm font-light leading-6 text-muted-foreground">
             {project.subtitle}
           </p>
           <p className="mt-4 text-[11px] font-medium uppercase tracking-[0.18em] text-mark">

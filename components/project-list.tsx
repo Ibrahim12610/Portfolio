@@ -23,7 +23,7 @@ export function ProjectList({
           {empty}
         </p>
       ) : (
-        <div className="mt-8 flex flex-col gap-16 md:mt-10 md:gap-24">
+        <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-14">
           {projects.map((project) => (
             <ProjectCard
               key={project.slug}
