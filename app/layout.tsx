@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Barlow, Cinzel } from "next/font/google";
+import { Barlow } from "next/font/google";
 import { ModalSlot } from "@/components/modal-slot";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -11,12 +11,6 @@ const barlow = Barlow({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
   variable: "--font-barlow",
-});
-
-const lol = Cinzel({
-  subsets: ["latin"],
-  weight: ["700"],
-  variable: "--font-lol-family",
 });
 
 const description = site.profile.about[0] ?? site.profile.role;
@@ -39,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${barlow.variable} ${lol.variable} h-full antialiased`}
+      className={`${barlow.variable} h-full antialiased`}
     >
       <body className="flex min-h-dvh flex-col bg-background text-foreground">
         <a

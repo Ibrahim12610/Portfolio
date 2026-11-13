@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <main>
       <div className="mx-auto w-full max-w-6xl px-5 pt-16 pb-8 sm:px-8 sm:pt-24 md:pt-28">
-        <h1 className="max-w-5xl font-lol text-[clamp(2.7rem,8vw,5.5rem)] font-bold uppercase leading-[0.9] tracking-[0.08em]">
+        <h1 className="max-w-5xl text-[clamp(2.7rem,8vw,5.5rem)] font-light uppercase leading-[0.92] tracking-[0.045em]">
           {greeting.map((line) => (
             <span key={line} className="block">
               {line}
