@@ -58,7 +58,7 @@ export const site = {
     disciplines: ["Gameplay designer", "Level designer"],
     portrait: "/ibrahim.jpg",
     about: [
-      "I'm a game designer on **Storm Frame Zero** at **Shadows Optional**. Alongside that, I'm building **CoilBound** with an indie team. It's an ongoing project, and a demo is coming to Steam in the coming months.",
+      "I'm a game designer on **Storm Frame Zero** at **Shadows Optional**. Alongside that, I'm building **CoilBound** with an indie team.",
       "I'm graduating from the **University of Houston** with a computer science degree focused on game design and development. I previously researched procedural animation, and as a teaching assistant I mentor students while they produce games.",
       "I care about game development and the community around it. I founded **Coog Interactive** to grow that community in Houston, and my goal is to make games that become global phenomena and show how much this industry matters to culture.",
     ],
