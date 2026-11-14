@@ -126,8 +126,12 @@ export const site = {
       title: "CoilBound",
       subtitle: "A narrative-driven steampunk RPG, made in Unreal Engine 5.",
       cover: {
-        src: "/covers/current.svg",
-        alt: "A black field cut by a red diagonal band and three pale horizontal lines.",
+        src: "/covers/coilbound.png",
+        alt: "CoilBound title plate: bronze letters on scratched dark metal.",
+      },
+      cardCover: {
+        src: "/covers/coilbound.png",
+        alt: "CoilBound title plate: bronze letters on scratched dark metal.",
       },
       role: "Game designer",
       engine: "Unreal Engine 5",
