@@ -226,60 +226,76 @@ export const site = {
   ] satisfies Project[],
   personal: [
     {
-      slug: "kitchen-radio",
-      title: "Kitchen Radio",
-      subtitle: "A weekend instrument that only plays while you are in the room.",
+      slug: "procedural-animation",
+      title: "Research Assistant: Procedural Animation",
+      subtitle:
+        "Researched how procedural animation on colossal entities affects immersion and realism in virtual environments.",
       cover: {
-        src: "/covers/radio.svg",
-        alt: "Concentric black circles on a pale ground, with a red center.",
+        src: "/covers/procedural-animation.svg",
+        alt: "A pale triangle with a red joint and fading motion lines on a dark field.",
       },
-      role: "Solo",
-      engine: "The browser, Web Audio",
-      platform: "Browser",
-      developmentTime: "A weekend",
-      teamSize: "1",
-      summary:
-        "Personal projects use the same page as the work. Kitchen Radio is a sample of something less official: a small instrument, a jam, a study. Clicking the image opens this same write-up.",
-      designGoals: [
-        "Sound should stop when you leave, so the piece does not become furniture.",
-        "One gesture, one result. No mixer.",
-      ],
-      sections: [
-        {
-          heading: "The rule",
-          paragraphs: [
-            "A microphone watches the room. While it hears you, a slow chord holds. When the room goes quiet, the chord releases. There is nothing to click. Being there is the input.",
-          ],
-        },
-      ],
+      role: "Research assistant",
+      engine: "",
+      platform: "",
+      developmentTime: "",
+      teamSize: "",
+      summary: "",
+      designGoals: [],
+      sections: [],
     },
     {
-      slug: "night-market",
-      title: "Night Market",
-      subtitle: "A two-night prototype about browsing without a map.",
+      slug: "nebula-game-engine",
+      title: "Nebula Game Engine",
+      subtitle:
+        "Built a custom C++ game engine with framework-agnostic systems, including rendering pipelines for OpenGL and Vulkan.",
       cover: {
-        src: "/covers/market.svg",
-        alt: "A black skyline of pale vertical bars, one of them red.",
+        src: "/covers/nebula-engine.svg",
+        alt: "A dark panel with a red code bar and two overlapping circles.",
       },
-      role: "Designer and programmer",
-      engine: "Godot",
+      role: "Engine programmer",
+      engine: "C++",
       platform: "PC",
-      developmentTime: "2 days",
-      teamSize: "1",
-      summary:
-        "Night Market is the second personal slot. Stalls face away from a main path. You find them by sound and by what other shoppers are carrying, not by an icon on a minimap.",
-      designGoals: [
-        "Hide the full layout on purpose.",
-        "Make a purchase leave a trace another stall can react to.",
-      ],
-      sections: [
-        {
-          heading: "What I kept",
-          paragraphs: [
-            "The map is three alleys. I cut a crafting system that ate the second night and left the carrying trace: buy spices, and the cook down the alley calls out a different dish. Small, readable, done.",
-          ],
-        },
-      ],
+      developmentTime: "",
+      teamSize: "",
+      summary: "",
+      designGoals: [],
+      sections: [],
+    },
+    {
+      slug: "babylons-call",
+      title: "Babylon's Call",
+      subtitle:
+        "A 2D Souls-like platformer with pixel art, set in the Tower of Babel.",
+      cover: {
+        src: "/covers/babylons-call.svg",
+        alt: "A stepped tower rising into a dark sky, with a red doorway at the base.",
+      },
+      role: "Game designer",
+      engine: "",
+      platform: "",
+      developmentTime: "",
+      teamSize: "",
+      summary: "",
+      designGoals: [],
+      sections: [],
+    },
+    {
+      slug: "stealing-christmas",
+      title: "Stealing Christmas",
+      subtitle:
+        "A 2D top-down horror game about a Grinch stealing Christmas. Took second place in the game jam it entered.",
+      cover: {
+        src: "/covers/stealing-christmas.svg",
+        alt: "A dark tree silhouette with a red circle and a thin pale ground line.",
+      },
+      role: "Game designer",
+      engine: "",
+      platform: "",
+      developmentTime: "",
+      teamSize: "",
+      summary: "",
+      designGoals: [],
+      sections: [],
     },
   ] satisfies Project[],
 };
