@@ -276,11 +276,11 @@ export const site = {
         "A 2D Souls-like platformer with pixel art, set in the Tower of Babel.",
       cover: {
         src: "/covers/babylons-call.png",
-        alt: "Babylon's Call title plate in pixel art on cracked parchment.",
+        alt: "Babylon's Call title over a desert ziggurat and ruined city skyline.",
       },
       cardCover: {
         src: "/covers/babylons-call.png",
-        alt: "Babylon's Call title plate in pixel art on cracked parchment.",
+        alt: "Babylon's Call title over a desert ziggurat and ruined city skyline.",
       },
       role: "Game designer",
       engine: "",
