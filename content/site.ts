@@ -231,8 +231,12 @@ export const site = {
       subtitle:
         "Researched how procedural animation on colossal entities affects immersion and realism in virtual environments.",
       cover: {
-        src: "/covers/procedural-animation.svg",
-        alt: "A pale triangle with a red joint and fading motion lines on a dark field.",
+        src: "/covers/teaching-assistant.png",
+        alt: "Public-domain clip art of a video game controller.",
+      },
+      cardCover: {
+        src: "/covers/teaching-assistant.png",
+        alt: "Public-domain clip art of a video game controller.",
       },
       role: "Research assistant",
       engine: "",
@@ -249,8 +253,12 @@ export const site = {
       subtitle:
         "Built a custom C++ game engine with framework-agnostic systems, including rendering pipelines for OpenGL and Vulkan.",
       cover: {
-        src: "/covers/nebula-engine.svg",
-        alt: "A dark panel with a red code bar and two overlapping circles.",
+        src: "/covers/nebula-engine.png",
+        alt: "Nebula engine debug view: blue blocks on a red ground with wireframe bounds.",
+      },
+      cardCover: {
+        src: "/covers/nebula-engine.png",
+        alt: "Nebula engine debug view: blue blocks on a red ground with wireframe bounds.",
       },
       role: "Engine programmer",
       engine: "C++",
@@ -267,8 +275,12 @@ export const site = {
       subtitle:
         "A 2D Souls-like platformer with pixel art, set in the Tower of Babel.",
       cover: {
-        src: "/covers/babylons-call.svg",
-        alt: "A stepped tower rising into a dark sky, with a red doorway at the base.",
+        src: "/covers/babylons-call.png",
+        alt: "Babylon's Call title plate in pixel art on cracked parchment.",
+      },
+      cardCover: {
+        src: "/covers/babylons-call.png",
+        alt: "Babylon's Call title plate in pixel art on cracked parchment.",
       },
       role: "Game designer",
       engine: "",
@@ -285,8 +297,12 @@ export const site = {
       subtitle:
         "A 2D top-down horror game about a Grinch stealing Christmas. Took second place in the game jam it entered.",
       cover: {
-        src: "/covers/stealing-christmas.svg",
-        alt: "A dark tree silhouette with a red circle and a thin pale ground line.",
+        src: "/covers/stealing-christmas.png",
+        alt: "Stealing Christmas title over a dark forest and aurora sky.",
+      },
+      cardCover: {
+        src: "/covers/stealing-christmas.png",
+        alt: "Stealing Christmas title over a dark forest and aurora sky.",
       },
       role: "Game designer",
       engine: "",
