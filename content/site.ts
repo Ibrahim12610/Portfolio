@@ -207,8 +207,12 @@ export const site = {
       subtitle:
         "Mentored multiple teams in game design and the production pipelines of modern games.",
       cover: {
-        src: "/covers/current-loop.svg",
-        alt: "Three labeled boxes in a cycle.",
+        src: "/covers/teaching-assistant.png",
+        alt: "A teaching assistant beside a desk with a game level editor on screen and a controller in hand.",
+      },
+      cardCover: {
+        src: "/covers/teaching-assistant.png",
+        alt: "A teaching assistant beside a desk with a game level editor on screen and a controller in hand.",
       },
       role: "Teaching assistant",
       engine: "",
