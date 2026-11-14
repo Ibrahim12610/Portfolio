@@ -208,11 +208,11 @@ export const site = {
         "Mentored multiple teams in game design and the production pipelines of modern games.",
       cover: {
         src: "/covers/teaching-assistant.png",
-        alt: "Public-domain clip art of a teacher beside a video game controller.",
+        alt: "Public-domain clip art of a video game controller.",
       },
       cardCover: {
         src: "/covers/teaching-assistant.png",
-        alt: "Public-domain clip art of a teacher beside a video game controller.",
+        alt: "Public-domain clip art of a video game controller.",
       },
       role: "Teaching assistant",
       engine: "",
