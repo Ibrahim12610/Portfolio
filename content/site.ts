@@ -185,8 +185,12 @@ export const site = {
       subtitle:
         "A University of Houston community I founded for Houston's game developers to gather, learn, and grow an overlooked local industry.",
       cover: {
-        src: "/covers/notes.svg",
-        alt: "A pale grid with one red rectangle and a black circle.",
+        src: "/covers/coog-interactive.png",
+        alt: "Coog Interactive mark: a red and black cougar head dissolving into cyan circuit lines.",
+      },
+      cardCover: {
+        src: "/covers/coog-interactive.png",
+        alt: "Coog Interactive mark: a red and black cougar head dissolving into cyan circuit lines.",
       },
       role: "Founder",
       engine: "",
