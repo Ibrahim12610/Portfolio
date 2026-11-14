@@ -122,6 +122,23 @@ export const site = {
   },
   work: [
     {
+      slug: "coilbound",
+      title: "CoilBound",
+      subtitle: "A narrative-driven steampunk RPG, made in Unreal Engine 5.",
+      cover: {
+        src: "/covers/current.svg",
+        alt: "A black field cut by a red diagonal band and three pale horizontal lines.",
+      },
+      role: "Game designer",
+      engine: "Unreal Engine 5",
+      platform: "",
+      developmentTime: "",
+      teamSize: "",
+      summary: "",
+      designGoals: [],
+      sections: [],
+    },
+    {
       slug: "storm-frame-zero",
       title: "Storm Frame Zero",
       subtitle:
@@ -157,23 +174,6 @@ export const site = {
           ],
         },
       ],
-    },
-    {
-      slug: "coilbound",
-      title: "CoilBound",
-      subtitle: "A narrative-driven steampunk RPG, made in Unreal Engine 5.",
-      cover: {
-        src: "/covers/current.svg",
-        alt: "A black field cut by a red diagonal band and three pale horizontal lines.",
-      },
-      role: "Game designer",
-      engine: "Unreal Engine 5",
-      platform: "",
-      developmentTime: "",
-      teamSize: "",
-      summary: "",
-      designGoals: [],
-      sections: [],
     },
     {
       slug: "coog-interactive",
