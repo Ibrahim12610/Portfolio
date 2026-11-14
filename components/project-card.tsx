@@ -23,7 +23,7 @@ export function ProjectCard({
             sizes="(min-width: 640px) 50vw, 100vw"
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025] group-focus-visible:scale-[1.025] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
           />
-          <p className="absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-black via-black/80 to-transparent px-4 pt-12 pb-4 text-sm font-light leading-6 text-[#efece4] opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:opacity-100 motion-reduce:transition-none">
+          <p className="absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-black via-black/80 to-transparent px-4 pt-12 pb-4 text-base font-light leading-7 text-[#efece4] opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:opacity-100 sm:text-lg sm:leading-8 motion-reduce:transition-none">
             {project.subtitle}
           </p>
         </div>

@@ -146,7 +146,7 @@ export const site = {
       slug: "storm-frame-zero",
       title: "Storm Frame Zero",
       subtitle:
-        "A co-op space third-person shooter where you fight to protect Earth from Jupiter.",
+        "An online co-op space third-person shooter where you fight to protect Earth from Jupiter.",
       cover: {
         src: "/covers/harbor.svg",
         alt: "A red sun sitting on a black horizon, with three pale posts in the foreground.",

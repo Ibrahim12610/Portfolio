@@ -40,7 +40,7 @@ export function ProjectArticle({
       <h1 className="mt-3 max-w-4xl text-[clamp(2.4rem,6vw,4.5rem)] font-medium uppercase leading-[0.92] tracking-[0.03em]">
         {project.title}
       </h1>
-      <p className="mt-5 max-w-2xl text-lg font-light leading-8 text-muted-foreground">
+      <p className="mt-5 max-w-2xl text-xl font-light leading-8 text-muted-foreground sm:text-[1.35rem] sm:leading-9">
         {project.subtitle}
       </p>
 
