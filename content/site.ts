@@ -141,7 +141,22 @@ export const site = {
       teamSize: "5",
       summary: "",
       designGoals: [],
-      sections: [],
+      sections: [
+        {
+          heading: "My role",
+          paragraphs: [
+            "I am the game designer on **Storm Frame Zero** at **Shadows Optional**. On a team of five, I design how the co-op fight plays: the combat, the enemies, and the hazards players deal with together while protecting Earth from Jupiter.",
+          ],
+        },
+        {
+          heading: "My contributions",
+          bullets: [
+            "Designed and implemented enemy and boss AI.",
+            "Designed and implemented networked hazards and other level elements.",
+            "Designed and implemented melee combat.",
+          ],
+        },
+      ],
     },
     {
       slug: "red-current",
