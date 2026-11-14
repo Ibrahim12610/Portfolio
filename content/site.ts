@@ -159,77 +159,57 @@ export const site = {
       ],
     },
     {
-      slug: "red-current",
-      title: "Red Current",
-      subtitle: "A combat prototype about committing to a strike.",
+      slug: "coilbound",
+      title: "CoilBound",
+      subtitle: "A narrative-driven steampunk RPG, made in Unreal Engine 5.",
       cover: {
         src: "/covers/current.svg",
         alt: "A black field cut by a red diagonal band and three pale horizontal lines.",
       },
-      role: "Combat designer",
-      engine: "Unity",
-      platform: "PC",
-      developmentTime: "8 weeks",
-      teamSize: "4",
-      summary:
-        "Red Current is a one-room combat prototype. You build speed on a line, then spend it on a single committed strike. This sample shows the same fact row, goals, and write-up you will use for a second work project.",
-      designGoals: [
-        "Make commitment readable before the hit lands.",
-        "Give a missed strike a recovery that is tense, not empty.",
-        "Keep the room learnable in under a minute.",
-      ],
-      sections: [
-        {
-          heading: "The loop",
-          paragraphs: [
-            "Three beats: read the opponent's line, commit, recover. A strike that matches their guard breaks it. A strike that misses leaves you on the wrong foot for a full beat.",
-          ],
-          image: {
-            src: "/covers/current-loop.svg",
-            alt: "Three labeled boxes in a cycle: Read, Commit, and Recover.",
-            caption: "The loop the room is built to teach.",
-          },
-        },
-        {
-          heading: "What changed",
-          paragraphs: [
-            "The first version let you cancel a commit. Nobody felt the cost, so they mashed. Removing the cancel made the first successful read feel like a decision instead of a reflex check.",
-          ],
-          bullets: [
-            "Startup of the strike is long enough to see, short enough to risk.",
-            "Recovery is where the opponent gets their turn. It is not a stun for its own sake.",
-            "The room has one guard type so the lesson stays singular.",
-          ],
-        },
-      ],
+      role: "Game designer",
+      engine: "Unreal Engine 5",
+      platform: "",
+      developmentTime: "",
+      teamSize: "",
+      summary: "",
+      designGoals: [],
+      sections: [],
     },
     {
-      slug: "field-notes",
-      title: "Field Notes",
-      subtitle: "A research tool for marking what playtesters actually did.",
+      slug: "coog-interactive",
+      title: "Coog Interactive",
+      subtitle:
+        "A University of Houston community I founded for Houston's game developers to gather, learn, and grow an overlooked local industry.",
       cover: {
         src: "/covers/notes.svg",
         alt: "A pale grid with one red rectangle and a black circle.",
       },
-      role: "Designer and researcher",
-      engine: "Figma, a small web app",
-      platform: "Browser",
-      developmentTime: "6 weeks",
-      teamSize: "2",
-      summary:
-        "Field Notes is a lighter sample. Same page, fewer sections. Use this shape when a project needs the facts and a short account, not a long postmortem.",
-      designGoals: [
-        "Capture a note without leaving the session.",
-        "Keep the tags boring and stable so notes stay comparable.",
-      ],
-      sections: [
-        {
-          heading: "How it was used",
-          paragraphs: [
-            "During tests, one person ran the session and the other dropped a pin on a shared timeline: hesitation, delight, break. Tags were a fixed list. Free text stayed optional so the record did not depend on anyone's prose.",
-          ],
-        },
-      ],
+      role: "Founder",
+      engine: "",
+      platform: "",
+      developmentTime: "",
+      teamSize: "",
+      summary: "",
+      designGoals: [],
+      sections: [],
+    },
+    {
+      slug: "teaching-assistant",
+      title: "Teaching Assistant / Mentor",
+      subtitle:
+        "Mentored multiple teams in game design and the production pipelines of modern games.",
+      cover: {
+        src: "/covers/current-loop.svg",
+        alt: "Three labeled boxes in a cycle.",
+      },
+      role: "Teaching assistant",
+      engine: "",
+      platform: "",
+      developmentTime: "",
+      teamSize: "",
+      summary: "",
+      designGoals: [],
+      sections: [],
     },
   ] satisfies Project[],
   personal: [
