@@ -10,8 +10,6 @@
     d="M6.2 6.4 L6.2 25.6 L12.2 20.4 L16.2 31.2 L19.6 29.4 L15.4 18.2 L24.6 18.2 Z"
     fill="#FCEE0A"
   />
-  <path d="M9.2 14.2 H16.4" stroke="#111" stroke-width="2.1" stroke-linecap="square" />
-  <path d="M9.2 14.2 H16.4" stroke="#00F0FF" stroke-width="1.15" stroke-linecap="square" />
   <circle cx="31.5" cy="31.5" r="8.2" fill="#050505" stroke="#FCEE0A" stroke-width="1.6" />
   <circle cx="31.5" cy="31.5" r="5.1" fill="none" stroke="#FCEE0A" stroke-width="0.8" opacity="0.85" />
   <circle cx="31.5" cy="31.5" r="2.15" fill="#E10600" />
