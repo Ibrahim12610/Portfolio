@@ -194,6 +194,10 @@ export const site = {
             "The story stays locked on the protagonist. The city feels like it is on its last chance, and the character carries a self-appointed duty that only they fully believe in—an angel-of-justice impulse closer to modern vigilante fiction than to a clean superhero fantasy. That duty is personal, almost private, which lets the player feel it while the world treats it differently.",
             "To protect player agency, I keep cinematics rare. Story beats land through **scripted events**, environment, and NPC dialogue. Patrol officers speak with contempt; civilians speak as if they have already been ground down. Those voices carry the city’s hierarchy without a cutscene lecture, and the broken streets and people do the rest.",
           ],
+          video: {
+            youtubeId: "L5_bIZ_1JMY",
+            caption: "Scripted narrative beat prototype — story through space and dialogue.",
+          },
         },
       ],
     },
