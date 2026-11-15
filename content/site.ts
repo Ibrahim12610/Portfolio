@@ -164,6 +164,10 @@ export const site = {
             "I wanted CoilBound to feel like a sneaking game without trapping the player in a slow loop. Pure stealth made the pace drag. Pure action killed the tension. The answer was the **shadow mechanic**: while standing in darkness, the player can become a shadow and slip from one pool of shade to the next.",
             "That single rule kept the rush I wanted and still rewarded staying unseen. It also forced the rest of the game to grow around it. I reworked pieces of the protagonist’s story and reshaped sections of the level so shadow travel felt authored into the world, not bolted on.",
           ],
+          video: {
+            youtubeId: "kkiRzNmvxxo",
+            caption: "Shadow traversal prototype — moving between pools of darkness.",
+          },
         },
         {
           heading: "Systemic interactions",
