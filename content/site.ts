@@ -133,14 +133,55 @@ export const site = {
         src: "/covers/coilbound.png",
         alt: "CoilBound title plate: bronze letters on scratched dark metal.",
       },
-      role: "Game designer",
+      role: "Creative director & lead designer",
       engine: "Unreal Engine 5",
-      platform: "",
-      developmentTime: "",
-      teamSize: "",
-      summary: "",
-      designGoals: [],
-      sections: [],
+      platform: "PC",
+      developmentTime: "4 months (ongoing)",
+      teamSize: "3",
+      summary:
+        "On a team of three, I set the creative direction for **CoilBound** and own the design of its stealth, systems, levels, and story. The throughline is simple rules that give players room to invent their own solutions.",
+      designGoals: [
+        "Keep stealth tense without slowing the game to a crawl.",
+        "Build depth from a few readable interactions, not a crowded ability list.",
+        "Let players discover the world and its story through space, routes, and dialogue instead of UI waypoints.",
+      ],
+      sections: [
+        {
+          heading: "My role",
+          paragraphs: [
+            "As **creative director** and **lead designer**, I oversee every design layer of CoilBound: the verbs of play, the story beats, and how those beats land inside the level. I prototype mechanics, spaces, and enemy encounters early, then cut or commit based on what actually feels worth keeping.",
+          ],
+        },
+        {
+          heading: "Shadow traversal",
+          paragraphs: [
+            "I wanted CoilBound to feel like a sneaking game without trapping the player in a slow loop. Pure stealth made the pace drag. Pure action killed the tension. The answer was the **shadow mechanic**: while standing in darkness, the player can become a shadow and slip from one pool of shade to the next.",
+            "That single rule kept the rush I wanted and still rewarded staying unseen. It also forced the rest of the game to grow around it. I reworked pieces of the protagonist’s story and reshaped sections of the level so shadow travel felt authored into the world, not bolted on.",
+          ],
+        },
+        {
+          heading: "Systemic interactions",
+          paragraphs: [
+            "After that, I focused on systems that stay simple on the surface and get deep once players start combining them. I studied how *Breath of the Wild*’s chemistry engine turns a few clear rules into dozens of player-authored moments, then designed CoilBound’s own interaction set with the same mindset.",
+            "That work lived in design docs, prototypes, and a long pass of testing what combinations were fun versus noise. To reward curiosity, I built puzzles and spaces that quietly ask for those interactions without spelling out the solution.",
+          ],
+        },
+        {
+          heading: "Level design",
+          paragraphs: [
+            "The level is built for **environmental storytelling** and player agency. Multiple routes cut through the same space, and each one reveals a different slice of the narrative.",
+            "Take the main path and you meet enemies and hostages that pull you into a rescue. Take the quieter alley and you find civilians vandalizing the district as revolt; follow that thread and you reach another branch of the same story. The quests are structured so a player can still complete the full narrative, but **how** they arrive at it is their choice.",
+            "I also use dialogue and story beats as navigation. Instead of immersion-breaking markers, the level steers you the way *Half-Life* does: through what people say and where the space points you. Early patrols talk about the hostages in places the player cannot miss, so searching for them becomes the first goal without a quest marker saying so.",
+          ],
+        },
+        {
+          heading: "Narrative design",
+          paragraphs: [
+            "The story stays locked on the protagonist. The city feels like it is on its last chance, and the character carries a self-appointed duty that only they fully believe in—an angel-of-justice impulse closer to modern vigilante fiction than to a clean superhero fantasy. That duty is personal, almost private, which lets the player feel it while the world treats it differently.",
+            "To protect player agency, I keep cinematics rare. Story beats land through **scripted events**, environment, and NPC dialogue. Patrol officers speak with contempt; civilians speak as if they have already been ground down. Those voices carry the city’s hierarchy without a cutscene lecture, and the broken streets and people do the rest.",
+          ],
+        },
+      ],
     },
     {
       slug: "storm-frame-zero",
