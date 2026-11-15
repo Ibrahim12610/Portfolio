@@ -11,11 +11,17 @@ export type ProjectImage = {
   caption?: string;
 };
 
+export type ProjectVideo = {
+  youtubeId: string;
+  caption?: string;
+};
+
 export type ProjectSection = {
   heading: string;
   paragraphs?: string[];
   bullets?: string[];
   image?: ProjectImage;
+  video?: ProjectVideo;
 };
 
 export type Project = {
@@ -165,6 +171,10 @@ export const site = {
             "After that, I focused on systems that stay simple on the surface and get deep once players start combining them. I studied how *Breath of the Wild*’s chemistry engine turns a few clear rules into dozens of player-authored moments, then designed CoilBound’s own interaction set with the same mindset.",
             "That work lived in design docs, prototypes, and a long pass of testing what combinations were fun versus noise. To reward curiosity, I built puzzles and spaces that quietly ask for those interactions without spelling out the solution.",
           ],
+          video: {
+            youtubeId: "4RcEsU_6Muc",
+            caption: "Prototype pass of CoilBound’s chemistry-style interactions.",
+          },
         },
         {
           heading: "Level design",

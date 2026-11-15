@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Project } from "@/content/site";
+import { ProjectVideo } from "@/components/project-video";
 import { RichText } from "@/components/rich-text";
 
 const backClass =
@@ -111,56 +112,77 @@ export function ProjectArticle({
       ) : null}
 
       <div className="mt-4 flex flex-col gap-14 pb-16">
-        {project.sections.map((section) => (
-          <section key={section.heading} className="max-w-3xl">
-            <h2 className="text-[13px] font-medium uppercase tracking-[0.22em]">
-              {section.heading}
-              <span className="text-mark">.</span>
-            </h2>
-            {section.paragraphs?.map((paragraph) => (
-              <p
-                key={paragraph}
-                className="mt-4 text-[17px] font-light leading-8"
+        {project.sections.map((section) => {
+          const hasMedia = Boolean(section.video || section.image);
+
+          return (
+            <section
+              key={section.heading}
+              className={hasMedia ? "max-w-6xl" : "max-w-3xl"}
+            >
+              <h2 className="text-[13px] font-medium uppercase tracking-[0.22em]">
+                {section.heading}
+                <span className="text-mark">.</span>
+              </h2>
+              <div
+                className={
+                  section.video
+                    ? "mt-4 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-start"
+                    : undefined
+                }
               >
-                <RichText text={paragraph} />
-              </p>
-            ))}
-            {section.image ? (
-              <figure className="mt-6">
-                <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
-                  <Image
-                    src={section.image.src}
-                    alt={section.image.alt}
-                    fill
-                    unoptimized
-                    sizes="(min-width: 768px) 768px, 100vw"
-                    className="object-cover"
-                  />
+                <div>
+                  {section.paragraphs?.map((paragraph) => (
+                    <p
+                      key={paragraph}
+                      className="mt-4 text-[17px] font-light leading-8 first:mt-0"
+                    >
+                      <RichText text={paragraph} />
+                    </p>
+                  ))}
+                  {section.bullets && section.bullets.length > 0 ? (
+                    <ul className="mt-6 space-y-3">
+                      {section.bullets.map((item) => (
+                        <li
+                          key={item}
+                          className="grid grid-cols-[auto_1fr] gap-3 text-[17px] font-light leading-7"
+                        >
+                          <span
+                            className="mt-2.5 size-1.5 bg-mark"
+                            aria-hidden
+                          />
+                          <span>
+                            <RichText text={item} />
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
                 </div>
-                {section.image.caption ? (
-                  <figcaption className="mt-3 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
-                    {section.image.caption}
-                  </figcaption>
-                ) : null}
-              </figure>
-            ) : null}
-            {section.bullets && section.bullets.length > 0 ? (
-              <ul className="mt-6 space-y-3">
-                {section.bullets.map((item) => (
-                  <li
-                    key={item}
-                    className="grid grid-cols-[auto_1fr] gap-3 text-[17px] font-light leading-7"
-                  >
-                    <span className="mt-2.5 size-1.5 bg-mark" aria-hidden />
-                    <span>
-                      <RichText text={item} />
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            ) : null}
-          </section>
-        ))}
+                {section.video ? <ProjectVideo video={section.video} /> : null}
+              </div>
+              {section.image ? (
+                <figure className="mt-6 max-w-3xl">
+                  <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
+                    <Image
+                      src={section.image.src}
+                      alt={section.image.alt}
+                      fill
+                      unoptimized
+                      sizes="(min-width: 768px) 768px, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  {section.image.caption ? (
+                    <figcaption className="mt-3 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
+                      {section.image.caption}
+                    </figcaption>
+                  ) : null}
+                </figure>
+              ) : null}
+            </section>
+          );
+        })}
       </div>
     </article>
   );
