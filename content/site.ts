@@ -211,7 +211,7 @@ export const site = {
       slug: "storm-frame-zero",
       title: "Storm Frame Zero",
       subtitle:
-        "An online co-op space third-person shooter where you fight to protect Earth from Jupiter.",
+        "An online co-op roguelike space third-person shooter where you fight to protect Earth from Jupiter.",
       cover: {
         src: "/covers/harbor.svg",
         alt: "A red sun sitting on a black horizon, with three pale posts in the foreground.",
@@ -225,21 +225,60 @@ export const site = {
       platform: "PC",
       developmentTime: "11 months (ongoing)",
       teamSize: "5",
-      summary: "",
-      designGoals: [],
+      summary:
+        "At **Shadows Optional**, a five-person indie team, I own the combat design of **Storm Frame Zero**—weapons, enemy AI, boss encounters, and how that fight holds up from solo runs to online co-op. On a studio this size I also script systems, weigh in on art direction, and help keep production on a testable schedule.",
+      designGoals: [
+        "Make every fight feel like a coordinated enemy force, not a crowd of solo attackers.",
+        "Extend single-player combat into co-op without diluting pressure or unique encounter beats.",
+        "Keep roguelike runs varied through mission types and modular weapons, not only harder numbers.",
+      ],
       sections: [
         {
           heading: "My role",
           paragraphs: [
-            "I am the game designer on **Storm Frame Zero** at **Shadows Optional**. On a team of five, I design how the co-op fight plays: the combat, the enemies, and the hazards players deal with together while protecting Earth from Jupiter.",
+            "As the game designer I split my time between the **feel of single-player and multiplayer combat**—iterating weapons, enemy packs, and encounters across each roguelike level—and **scripting** those enemies and bosses so the intended experience actually lands in-engine.",
+            "In a studio of five, the role stretches past pure design docs. I give notes on art, jump into programming when a mechanic needs a working prototype, and sit in production meetings so features hit the build when the whole team can playtest them.",
           ],
         },
         {
-          heading: "My contributions",
-          bullets: [
-            "Designed and implemented enemy and boss AI.",
-            "Designed and implemented networked hazards and other level elements.",
-            "Designed and implemented melee combat.",
+          heading: "Enemy coordination",
+          paragraphs: [
+            "To make combat feel battle-forward—and like humanity’s last stand against an army—I focused first on how enemies work **together**. The first pass had units scan nearby allies and sync attack patterns inside a radius. It read as coordinated, but it was too expensive to run.",
+            "I replaced that with a **grid-based check** that runs less often, then rebuilt coordination around tactics driven by ally count. The result plays less like loose mobs and more like a hive: denser groups change behavior, pressure stays readable, and the fight sells an organized force without torching performance.",
+          ],
+        },
+        {
+          heading: "Co-op extensions",
+          paragraphs: [
+            "Moving that design into multiplayer meant playtesting the solo rules hard, then extending them instead of inventing a second game. Encounter tactics now orient around the **nearest player**, so each person still feels hunted in their own pocket of the fight while both can set up plays the other can exploit.",
+            "The same thinking shaped repairs. Solo, players return to base for a finite set of ammo reloads. In co-op, giving every player that full pool made levels too soft. I made repairs **shared**: the team decides who spends them, and someone has to cover the other while they do. That single constraint raised difficulty back to target and pushed real camaraderie into the loop.",
+          ],
+        },
+        {
+          heading: "Enemies and bosses",
+          paragraphs: [
+            "Every enemy is designed as a **unit inside a squad**, not a standalone punch bag. Dogfighters follow a wing leader and commit in fast, precise groups. Each enemy type gets its own AI profile so like units—and mixed packs—can still coordinate cleanly as the roster scales.",
+            "For the first boss I wanted empowerment: their mega-weapon, not another large grunt. An early pass with a small attack set felt thin in playtests. I grew the silhouette to sell authority, then widened the kit—**rocket barrages**, **rifle barrages**, and a **phase-transition stun blast**—so the fight feels expansive and shows the boss harnessing the same storm players fear.",
+          ],
+        },
+        {
+          heading: "Roguelike missions",
+          paragraphs: [
+            "Roguelike levels go stale if every run is only “clear enemies, exit.” We aimed for missions that sell a back-and-forth war: taking the fight toward Jupiter, then feeling the cost of that push.",
+            "That meant defend-the-ship missions, hunts against enemy ships and fortresses, and stages built from **wreckage of older fleets**—graveyards of past attempts and enemy stations that mark how far the battle has already traveled. Variety comes from objective and space, not only from spawn tables.",
+          ],
+        },
+        {
+          heading: "Weapons and balance",
+          paragraphs: [
+            "Because the game is a roguelike, weapon design had to stay **modular**: many tools that stay fun alone and stronger in mix-and-match loadouts. That work lived in design docs and repeated playthroughs—tuning type values, cutting weak options, and sharpening keepers like missile variants and the sniper until each run’s kit felt distinct.",
+            "Balancing solo against co-op meant raising encounter pressure for more players without flattening the fights that should stay special. Bosses, for example, **scale dynamically with player count** instead of simply spawning a second boss, so the encounter stays unique while the difficulty still tracks the party.",
+          ],
+        },
+        {
+          heading: "Production",
+          paragraphs: [
+            "I also help run the studio clock: keep deadlines honest, land features in builds early enough for full-team playtests, guard against overscope, and support outreach so the project finds people who fit the work. On a five-person team, protecting the design from budget and schedule blowups is part of making the game shippable.",
           ],
         },
       ],
