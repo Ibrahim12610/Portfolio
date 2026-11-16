@@ -187,6 +187,11 @@ export const site = {
             "Take the main path and you meet enemies and hostages that pull you into a rescue. Take the quieter alley and you find civilians vandalizing the district as revolt; follow that thread and you reach another branch of the same story. The quests are structured so a player can still complete the full narrative, but **how** they arrive at it is their choice.",
             "I also use dialogue and story beats as navigation. Instead of immersion-breaking markers, the level steers you the way *Half-Life* does: through what people say and where the space points you. Early patrols talk about the hostages in places the player cannot miss, so searching for them becomes the first goal without a quest marker saying so.",
           ],
+          image: {
+            src: "/covers/coilbound-level-layout.png",
+            alt: "Top-down CoilBound level layout showing player routes, enemies, NPCs, scripted events, and the final tower.",
+            caption: "Level layout — routes, encounters, and story beats across the district.",
+          },
         },
         {
           heading: "Narrative design",

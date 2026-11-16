@@ -126,7 +126,7 @@ export function ProjectArticle({
               </h2>
               <div
                 className={
-                  section.video
+                  hasMedia
                     ? "mt-4 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-start"
                     : undefined
                 }
@@ -160,8 +160,28 @@ export function ProjectArticle({
                   ) : null}
                 </div>
                 {section.video ? <ProjectVideo video={section.video} /> : null}
+                {!section.video && section.image ? (
+                  <figure className="mt-2 lg:mt-0">
+                    <div className="overflow-hidden bg-[#141414]">
+                      <Image
+                        src={section.image.src}
+                        alt={section.image.alt}
+                        width={958}
+                        height={800}
+                        unoptimized
+                        sizes="(min-width: 1024px) 560px, 100vw"
+                        className="h-auto w-full object-contain"
+                      />
+                    </div>
+                    {section.image.caption ? (
+                      <figcaption className="mt-3 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
+                        {section.image.caption}
+                      </figcaption>
+                    ) : null}
+                  </figure>
+                ) : null}
               </div>
-              {section.image ? (
+              {section.video && section.image ? (
                 <figure className="mt-6 max-w-3xl">
                   <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
                     <Image
