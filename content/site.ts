@@ -226,7 +226,7 @@ export const site = {
       developmentTime: "11 months (ongoing)",
       teamSize: "5",
       summary:
-        "At **Shadows Optional**, a five-person indie team, I own the combat design of **Storm Frame Zero**—weapons, enemy AI, boss encounters, and how that fight holds up from solo runs to online co-op. On a studio this size I also script systems, weigh in on art direction, and help keep production on a testable schedule.",
+        "At **Shadows Optional**, a five-person indie team, I own the gameplay design of **Storm Frame Zero**—weapons, enemy AI, boss encounters, and how that fight holds up from solo runs to online co-op. On a studio this size I also script systems, weigh in on art direction, and help keep production on a testable schedule.",
       designGoals: [
         "Make every fight feel like a coordinated enemy force, not a crowd of solo attackers.",
         "Extend single-player combat into co-op without diluting pressure or unique encounter beats.",
