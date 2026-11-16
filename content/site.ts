@@ -287,7 +287,7 @@ export const site = {
       slug: "coog-interactive",
       title: "Coog Interactive",
       subtitle:
-        "A University of Houston community I founded for Houston's game developers to gather, learn, and grow an overlooked local industry.",
+        "A University of Houston community I founded so Houston’s game developers—and the people who want to become them—have a place to gather, learn, and build.",
       cover: {
         src: "/covers/coog-interactive.png",
         alt: "Coog Interactive mark: a red and black cougar head dissolving into cyan circuit lines.",
@@ -298,12 +298,59 @@ export const site = {
       },
       role: "Founder",
       engine: "",
-      platform: "",
-      developmentTime: "",
+      platform: "University of Houston",
+      developmentTime: "Ongoing",
       teamSize: "",
-      summary: "",
-      designGoals: [],
-      sections: [],
+      summary:
+        "Game development is still an underappreciated craft in Houston. I founded **Coog Interactive** because immersive arts deserved a real outlet on campus—and because I wanted a community that treats making games as a serious path, not a side hobby.",
+      designGoals: [
+        "Give students a lasting home for game development at a university that did not have one.",
+        "Build a culture of shipping: teams, skills, and games that transfer into industry work.",
+        "Widen the circle past Computer Science so Digital Media, Communications, Engineering, and beyond can show up.",
+      ],
+      sections: [
+        {
+          heading: "Starting from an idea",
+          paragraphs: [
+            "It began the way most communities do: one person with a conviction and an empty room. I believed UH needed to celebrate immersive arts, and that students who cared about games needed somewhere to meet each other.",
+            "I started recruiting where the energy already was—the game development class—asking peers to help stand the org up. One classmate said yes. My TA connected me with others who had floated the same dream. I reached out, pulled that group together, and we hit the university’s minimum membership to become an official community. Then the real work started: keep it alive long enough to matter.",
+          ],
+        },
+        {
+          heading: "A culture worth building",
+          paragraphs: [
+            "Marketing alone would not hold people. We needed a culture. I studied what worked elsewhere—conversations with game professors and with university clubs that had already sustained this kind of scene—and kept landing on the same idea: **innovation through making**.",
+            "Our model became practical on purpose. Help willing members form teams. Teach them how to finish games. Aim those projects toward work that could eventually be commercialized. The point was never only a social hour. It was a bridge from campus skills into the industry, and a longer bet that Houston could grow into a real hub for game development if someone lit the catalyst and kept feeding it.",
+          ],
+        },
+        {
+          heading: "Getting people in the door",
+          paragraphs: [
+            "Ambition does not fill a room by itself. UH is a commuter campus, attention is scarce, and many students were locked on a difficult CS job market that made “games as a career” sound risky. Being known inside Computer Science was not enough when the people we needed lived in other schools I could not casually walk into.",
+            "So I ran a real outreach push: flyers, professors, adjacent communities, and anyone who could open a classroom door. Word moved past the building we started in. Students from Digital Media, Communications, and Engineering started showing up. That cross-campus mix is when Coog Interactive stopped feeling like a CS side club and started feeling like a city-facing community.",
+          ],
+        },
+        {
+          heading: "Game jams and regular practice",
+          paragraphs: [
+            "Once we finally had critical mass, I pushed us into **game jams**. That was the breakthrough for engagement—people poured in from across schools, and the energy was too good to spend on a one-off. We followed with more regular events so newcomers were not left excited and stranded: sessions that taught the craft of making games, not only the idea of liking them.",
+          ],
+        },
+        {
+          heading: "Industry and the wider city",
+          paragraphs: [
+            "We also reached past campus into Houston’s working scene—studios and remote industry folks who still call this city home. That opened doors for talks, mentorship, and visibility. Podcasts picked us up. A Houston magazine did too. None of that was the goal by itself; it was proof the community had become real enough for the city to notice.",
+            "The moment that still sits with me is simple: members deep in conversation about game development, and people from the industry walking in to speak with them. That was the catalyst I had been trying to start—not a finished hub, but a living room where Houston’s next game developers could find each other.",
+          ],
+        },
+        {
+          heading: "What it meant",
+          paragraphs: [
+            "The relationships from Coog Interactive are some of the best I have. Seeing people light up about the same work that drives me made the lonely early days worth it. It reminded me why I want this career in the first place: games matter more when they are made in community.",
+            "Leading the officer team taught me how to market an idea, manage people across different projects, and guide a group without crushing the joy that brought them in. Those leadership habits—and the social craft of starting something this size from nothing—are skills I will carry into every studio floor I walk onto.",
+          ],
+        },
+      ],
     },
     {
       slug: "teaching-assistant",
