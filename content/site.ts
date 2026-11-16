@@ -173,6 +173,7 @@ export const site = {
           heading: "Systemic interactions",
           paragraphs: [
             "After that, I focused on systems that stay simple on the surface and get deep once players start combining them. I studied how *Breath of the Wild*’s chemistry engine turns a few clear rules into dozens of player-authored moments, then designed CoilBound’s own interaction set with the same mindset.",
+            "A few of the rules players can invent with: **gas and fire** detonate into explosions; **electricity** can charge and manipulate **ice**; ice freezes water into walkable platforms on the surface; and gas erodes ice on contact. None of those need a special ability wheel—they come from putting elements next to each other.",
             "That work lived in design docs, prototypes, and a long pass of testing what combinations were fun versus noise. To reward curiosity, I built puzzles and spaces that quietly ask for those interactions without spelling out the solution.",
           ],
           video: {
@@ -189,8 +190,8 @@ export const site = {
           ],
           image: {
             src: "/covers/coilbound-level-layout.png",
-            alt: "Top-down CoilBound level layout showing player routes, enemies, NPCs, scripted events, and the final tower.",
-            caption: "Level layout — routes, encounters, and story beats across the district.",
+            alt: "Top-down CoilBound level layout labeled with the main road route, alley route, river crossing, execution platform, and final tower.",
+            caption: "Level layout — main road vs alley routes, encounters, and story beats across the district.",
           },
         },
         {
