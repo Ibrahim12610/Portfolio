@@ -91,24 +91,26 @@ export function ProjectArticle({
         </div>
       ) : null}
 
-      <figure className="mt-12">
-        <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
-          <Image
-            src={project.cover.src}
-            alt={project.cover.alt}
-            fill
-            unoptimized
-            priority
-            sizes="(min-width: 1152px) 1088px, 100vw"
-            className="object-cover"
-          />
-        </div>
-        {project.cover.caption ? (
-          <figcaption className="mt-3 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
-            {project.cover.caption}
-          </figcaption>
-        ) : null}
-      </figure>
+      {project.cover ? (
+        <figure className="mt-12">
+          <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
+            <Image
+              src={project.cover.src}
+              alt={project.cover.alt}
+              fill
+              unoptimized
+              priority
+              sizes="(min-width: 1152px) 1088px, 100vw"
+              className="object-cover"
+            />
+          </div>
+          {project.cover.caption ? (
+            <figcaption className="mt-3 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
+              {project.cover.caption}
+            </figcaption>
+          ) : null}
+        </figure>
+      ) : null}
 
       {project.designGoals.length > 0 ? (
         <section className="mt-14 max-w-3xl">

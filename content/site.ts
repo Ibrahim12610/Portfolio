@@ -28,8 +28,9 @@ export type Project = {
   slug: string;
   title: string;
   subtitle: string;
-  cover: ProjectImage;
-  /** Shown on the home card only. The project page keeps `cover`. */
+  /** Hero image on the case-study page. Omit to skip (e.g. trailer-only). */
+  cover?: ProjectImage;
+  /** Shown on the home card only. Falls back to `cover` when unset. */
   cardCover?: ProjectImage;
   role: string;
   engine: string;
@@ -572,10 +573,6 @@ export const site = {
       title: "Babylon's Call",
       subtitle:
         "A 2D pixel Souls-like platformer set in the Tower of Babel—led an 8-person team from GDD through a full production ship.",
-      cover: {
-        src: "/covers/babylons-call.png",
-        alt: "Babylon's Call title over a desert ziggurat and ruined city skyline.",
-      },
       cardCover: {
         src: "/covers/babylons-call.png",
         alt: "Babylon's Call title over a desert ziggurat and ruined city skyline.",
