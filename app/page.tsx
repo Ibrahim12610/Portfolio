@@ -62,11 +62,11 @@ export default function HomePage() {
 
         <div className="mt-24 mb-8 md:mt-36 md:mb-16">
           <ProjectList
-            id="personal"
-            label="Personal"
-            projects={site.personal}
-            hrefBase="/personal"
-            empty="Personal projects will show up here."
+            id="lab"
+            label="Lab"
+            projects={site.lab}
+            hrefBase="/lab"
+            empty="Lab projects will show up here."
           />
         </div>
       </div>

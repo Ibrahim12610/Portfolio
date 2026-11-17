@@ -22,7 +22,7 @@ export function ProjectArticle({
   showBackLink = false,
 }: {
   project: Project;
-  kind: "Work" | "Personal";
+  kind: "Work" | "Lab";
   showBackLink?: boolean;
 }) {
   return (

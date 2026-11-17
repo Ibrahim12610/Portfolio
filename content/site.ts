@@ -1,6 +1,6 @@
 /**
  * Portfolio copy. Replace the sample entries with your own.
- * To add a project: copy an object in `work` or `personal`,
+ * To add a project: copy an object in `work` or `lab`,
  * give it a new slug, and drop a cover image in `public/covers`.
  * Wrap words in **double asterisks** to set them heavier.
  */
@@ -415,6 +415,8 @@ export const site = {
         },
       ],
     },
+  ] satisfies Project[],
+  lab: [
     {
       slug: "procedural-animation",
       title: "Research Assistant: Procedural Animation",
@@ -485,8 +487,7 @@ export const site = {
         },
       ],
     },
-  ] satisfies Project[],
-  personal: [
+
     {
       slug: "nebula-game-engine",
       title: "Nebula Game Engine",
@@ -560,6 +561,6 @@ export function getWorkProject(slug: string) {
   return site.work.find((project) => project.slug === slug);
 }
 
-export function getPersonalProject(slug: string) {
-  return site.personal.find((project) => project.slug === slug);
+export function getLabProject(slug: string) {
+  return site.lab.find((project) => project.slug === slug);
 }
