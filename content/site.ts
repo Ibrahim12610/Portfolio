@@ -591,7 +591,7 @@ export const site = {
       slug: "stealing-christmas",
       title: "Stealing Christmas",
       subtitle:
-        "A 2D top-down horror game about a Grinch stealing Christmas. Took second place in the game jam it entered.",
+        "A 2D top-down holiday horror jam game: steal Christmas as the Grinch while Santa hunts you in the dark. Playable in browser—took second place.",
       cover: {
         src: "/covers/stealing-christmas.png",
         alt: "Stealing Christmas title over a dark forest and aurora sky.",
@@ -601,13 +601,53 @@ export const site = {
         alt: "Stealing Christmas title over a dark forest and aurora sky.",
       },
       role: "Game designer",
-      engine: "",
-      platform: "",
-      developmentTime: "",
-      teamSize: "",
-      summary: "",
-      designGoals: [],
-      sections: [],
+      engine: "2D",
+      platform: "Browser (itch.io)",
+      developmentTime: "Game jam",
+      teamSize: "Friend group jam team",
+      summary:
+        "A Christmas game jam with friends—built to show what our new community could ship under a hard deadline. Theme was **bells**. We locked a Grinch-eyed horror fantasy fast: hide from Santa, silence the elves, and steal Christmas before the chase catches you.",
+      designGoals: [
+        "Turn the jam theme into a stealth fantasy players feel immediately.",
+        "Make sound, light, and scale do the horror work—not just jumpscares.",
+        "Give stealth routes real agency so the cat-and-mouse loop stays playable under time pressure.",
+      ],
+      links: [
+        {
+          label: "Play on itch.io",
+          href: "https://junior4144.itch.io/stealing-christmas",
+        },
+      ],
+      sections: [
+        {
+          heading: "Jam brief and design lock",
+          paragraphs: [
+            "We entered the jam as a friend group and as a showcase for the talent gathering in our community. Christmas jam. Theme drop: **bells**. Jam rules meant the design had to lock in the first meeting—no weeks of ideation, just a few holiday pitches and a hard call.",
+            "I pushed a horror read of Christmas: play as the **Grinch**, not Santa’s helper. Bells became the alert system—elves who spot you **ring** and warn Santa. That single beat turned the theme into a hide-and-seek, cat-and-mouse chase: survive the dark, steal Christmas, don’t get caught.",
+          ],
+        },
+        {
+          heading: "Horror through systems",
+          paragraphs: [
+            "Under the jam clock we hunted design gaps that still read on first play. **Sound** had to be a survival tool, not wallpaper: Santa’s approach carries jingle-bell audio so you hear danger before you see it while moving through a dark space. Light sits tightly around the player—just enough to navigate, not enough to feel safe—so loneliness and dread stay in the frame.",
+            "Scale did the rest of the genre work. Santa is **huge**; the player is small. That size gap sells the menace of being hunted without needing a long cutscene budget. Stealing Christmas wasn’t only about escaping—it was about feeling outmatched every time the chase closed in.",
+          ],
+        },
+        {
+          heading: "Tasks, vents, and stealth agency",
+          paragraphs: [
+            "Minigames became the **jobs** that advance the heist. Each completed task pays off with progress toward stealing Christmas, so the loop isn’t only hide-and-wait—it rewards finishing work under pressure and feeling the goal get closer.",
+            "Pure patrol-and-wait stealth would have gone flat fast. We needed an escape valve when elves had you boxed in, so we borrowed a page from *Among Us*: **vents** for a quick exit from a sticky route. That gave stealth players a readable option beyond freezing until an elf turned around—and kept the chase fantasy lively inside a jam-length build.",
+          ],
+        },
+        {
+          heading: "Shipping under the clock",
+          paragraphs: [
+            "This project was a crash course in **time management**: prototype the fantasy early, cut what the deadline cannot carry, and design inside the constraint instead of inventing a feature list that never ships. Working that fast taught how to hear teammates clearly, trust the people who own their piece, and keep the creative energy pointed at a playable build.",
+            "Constraint became the creative exercise. Bells, Christmas, horror, and a short calendar forced a sharp fantasy—and the team shipped a second-place jam game you can still play in the browser.",
+          ],
+        },
+      ],
     },
   ] satisfies Project[],
 };
