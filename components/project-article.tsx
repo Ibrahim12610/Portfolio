@@ -56,6 +56,23 @@ export function ProjectArticle({
         ))}
       </dl>
 
+      {project.links && project.links.length > 0 ? (
+        <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+          {project.links.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-[11px] font-medium uppercase tracking-[0.18em] text-mark hover:underline"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+
       {project.summary ? (
         <section className="mt-12 max-w-2xl">
           <h2 className="text-[13px] font-medium uppercase tracking-[0.22em]">

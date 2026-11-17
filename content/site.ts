@@ -39,6 +39,7 @@ export type Project = {
   summary: string;
   designGoals: string[];
   sections: ProjectSection[];
+  links?: { label: string; href: string }[];
 };
 
 export type ResumeRole = {
@@ -492,7 +493,7 @@ export const site = {
       slug: "nebula-game-engine",
       title: "Nebula Game Engine",
       subtitle:
-        "Built a custom C++ game engine with framework-agnostic systems, including rendering pipelines for OpenGL and Vulkan.",
+        "A from-scratch C++ engine with a layered architecture, OpenGL/Vulkan-ready rendering, a Qt editor, and a sample platformer built on top of it.",
       cover: {
         src: "/covers/nebula-engine.png",
         alt: "Nebula engine debug view: blue blocks on a red ground with wireframe bounds.",
@@ -504,11 +505,65 @@ export const site = {
       role: "Engine programmer",
       engine: "C++",
       platform: "PC",
-      developmentTime: "",
-      teamSize: "",
-      summary: "",
-      designGoals: [],
-      sections: [],
+      developmentTime: "Ongoing personal build",
+      teamSize: "Solo (after a 4-person start)",
+      summary:
+        "I wanted to understand engines from the inside—not only use one. After a four-person start stalled before features landed, I kept **Nebula** going alone: research first, then a scalable C++ architecture aimed at a small Mario-style game so every system had a real reason to exist.",
+      designGoals: [
+        "Keep engine and game separated through a public header API and enforced layer rules.",
+        "Make rendering backend-agnostic so OpenGL can run today and Vulkan can plug in later.",
+        "Grow features against a concrete sample game, not a directionless tech demo.",
+      ],
+      links: [
+        {
+          label: "GitHub repository",
+          href: "https://github.com/Nebula-Entertainment-Beta/Nebula",
+        },
+      ],
+      sections: [
+        {
+          heading: "Why build an engine",
+          paragraphs: [
+            "The idea started bigger than a solo project: a team of four ready to build Nebula together. Schedules collapsed before we could ship features, and the easy move would have been to quit. I stayed with it as a personal deep dive into how engines actually work—windows, render loops, scenes, tooling—the machinery designers usually only meet through a finished product.",
+            "I researched how other small engines are structured and decided early that Nebula had to be **scalable**: features stacked on clear boundaries, not a pile of one-off hacks. That decision shaped everything that followed.",
+          ],
+        },
+        {
+          heading: "Rendering from a triangle up",
+          paragraphs: [
+            "I started where I could see proof: a **rendering pipeline**. First milestone was a triangle in a window. From there I built out the stack designers never see—vertex layouts, buffers, shaders, textures, clear/draw/swap—until gameplay code could draw without calling raw `gl*` itself.",
+            "The hard architectural bet was making that pipeline **API-agnostic**. OpenGL runs the engine today; Vulkan sits behind the same factories and stubs so a backend switch should not rewrite the game. Graphics context creation, render backends, and the abstract `Renderer` / `RenderAPI` layer are split on purpose: windowing is not rendering, and game code never imports OpenGL headers.",
+          ],
+        },
+        {
+          heading: "Engine versus game",
+          paragraphs: [
+            "Keeping engine code out of the game was harder than drawing the triangle. Early passes leaked concerns into the wrong places and forced rewrites. I carved a public API under `Nebula/include`—`Nebula.h`, application, scene, scripts—so **Nimbus**, the sample game, talks to the engine through headers only, not through GLFW, GLAD, or backend types.",
+            "That separation is not a vibe; it is enforced. Layer docs and CI scripts block illegal includes so the game cannot construct GPU resources with backend factories or pull platform APIs through the side door. Maintaining that wall while still shipping features was one of the real technical fights of the project.",
+          ],
+        },
+        {
+          heading: "Application loop and hot reload",
+          paragraphs: [
+            "The **game loop** was the most stubborn systems problem. Every rendering or gameplay addition forced the application API to stay honest: load order, update order, when scenes mount, when input maps, when render systems fire. Getting that loop wrong made the whole engine feel brittle.",
+            "I also chased **hot reload** habits so a C++ engine did not punish iteration with full rebuilds for every tweak. Prefabs helped modularize level pieces I could revise without rewriting scenes from scratch. The loop, the load path, and the content format had to grow together or the editor and game would diverge.",
+          ],
+        },
+        {
+          heading: "Editor and exposed values",
+          paragraphs: [
+            "I wanted Nebula to own an **editor**, not only a runtime. That meant a Qt tool shell—docks, scene view, play mode, picking, gizmos—sitting on the same public engine API as the game, without the editor linking game scripts directly. Each game hosts the editor with its own registration hooks.",
+            "Exposing values into that editor was a late, sharp climb. First I had to stop overusing a catch-all main file; then I had to thread engine logic so fields could surface in the UI without collapsing the runtime into a single god object. Along the way I used a **singleton** for combat work, recognized it as the wrong shape, and tore it out. That correction mattered as much as the feature: the architecture had to stay teachable and separable.",
+          ],
+        },
+        {
+          heading: "Systems built for a real game",
+          paragraphs: [
+            "To stop the engine from becoming directionless, I anchored it to **Nimbus**: a small character that jumps, fights enemies, and plays in a Mario-esque loop. Features had to serve that fantasy—player and enemy scripts, bounce pads, checkpoints, wind volumes, scene serialization, ECS-style registries, physics integration, and audio services—each tracked against design docs and feature deadlines I held myself to.",
+            "Working outside my usual design seat meant learning the inner wiring of engines on purpose: how a frame is ordered, why render interfaces stay clean of backend types, how scenes and scripts live across play mode, and how prefab overrides keep modular content editable. The hardship was the point. Curiosity pulled me into a domain that was not my expertise, and the engine is the record of staying there long enough to build real layers.",
+          ],
+        },
+      ],
     },
     {
       slug: "babylons-call",
