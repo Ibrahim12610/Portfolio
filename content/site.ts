@@ -505,8 +505,8 @@ export const site = {
       role: "Engine programmer",
       engine: "C++",
       platform: "PC",
-      developmentTime: "Ongoing personal build",
-      teamSize: "Solo (after a 4-person start)",
+      developmentTime: "6 months",
+      teamSize: "Solo",
       summary:
         "I wanted to understand engines from the inside—not only use one. After a four-person start stalled before features landed, I kept **Nebula** going alone: research first, then a scalable C++ architecture aimed at a small Mario-style game so every system had a real reason to exist.",
       designGoals: [
