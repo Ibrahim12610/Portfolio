@@ -67,7 +67,7 @@ export const site = {
     portrait: "/ibrahim.jpg",
     about: [
       "I'm a game designer on **Storm Frame Zero** at **Shadows Optional**. I'm also designing **CoilBound**, an indie game.",
-      "I'm graduating from the **University of Houston** with a computer science degree focused on game design and development. I previously researched procedural animation, and as a teaching assistant I mentor students while they produce games.",
+      "I'm graduating from the **University of Houston** with a computer science degree focused on game design and development. I completed paid undergraduate research on procedural animation for colossal entities, and as a teaching assistant I mentor students while they produce games.",
       "I care about game development and the community around it. I founded **Coog Interactive** to grow that community in Houston, and my goal is to make games that become global phenomena and show how much this industry matters to culture.",
     ],
     email: "faisalibrahim610@gmail.com",
@@ -415,30 +415,78 @@ export const site = {
         },
       ],
     },
-  ] satisfies Project[],
-  personal: [
     {
       slug: "procedural-animation",
       title: "Research Assistant: Procedural Animation",
       subtitle:
-        "Researched how procedural animation on colossal entities affects immersion and realism in virtual environments.",
+        "Paid undergraduate research on how procedural animation for colossal entities changes realism and immersion in virtual environments.",
       cover: {
-        src: "/covers/teaching-assistant.png",
-        alt: "Public-domain clip art of a video game controller.",
+        src: "/covers/procedural-animation.svg",
+        alt: "A pale triangle with a red joint and fading motion lines on a dark field.",
       },
       cardCover: {
-        src: "/covers/teaching-assistant.png",
-        alt: "Public-domain clip art of a video game controller.",
+        src: "/covers/procedural-animation.svg",
+        alt: "A pale triangle with a red joint and fading motion lines on a dark field.",
       },
       role: "Research assistant",
       engine: "",
-      platform: "",
-      developmentTime: "",
-      teamSize: "",
-      summary: "",
-      designGoals: [],
-      sections: [],
+      platform: "University of Houston",
+      developmentTime: "Summer research grant",
+      teamSize: "Faculty-advised solo build",
+      summary:
+        "Playing games like *God of War* and *Shadow of the Colossus*, I kept noticing that colossal encounters usually live on flat arenas. I wanted to know what happens to realism when a giant **procedurally adapts** to uneven terrain. That curiosity became a funded undergraduate research project with a professor who helped me see it through.",
+      designGoals: [
+        "Isolate procedural animation as the variable—not a whole game’s worth of noise.",
+        "Build an IK solver that keeps colossal feet and arms planted without breaking the body.",
+        "Measure whether that motion changes how people rate realism and immersion.",
+      ],
+      sections: [
+        {
+          heading: "The question",
+          paragraphs: [
+            "Colossal enemies are often staged on level ground. The level design works, but the body rarely has to negotiate real terrain. I wanted to test a different premise: if a giant’s motion adapted to slopes, bumps, and walls, would players feel the world as more real?",
+            "I joined an undergraduate research program, found a professor willing to advise the idea, and received a **summer grant** to build and study it. The first instinct was to wrap the whole question in a game. That would have flooded the study with combat, camera, and content variables. We cut that ambition on purpose and scoped to a survey where the only meaningful difference was the colossal entity moving through environments **with and without** the procedural layer.",
+          ],
+        },
+        {
+          heading: "Building the foot solver",
+          paragraphs: [
+            "With scope locked, I started on the **IK solver**—and fell straight into the math of procedural animation. After enough research to start building, I wrote a solver for the colossal’s feet so they could conform to bumpy ground.",
+            "The first discovery was blunt: rotating and sliding foot bones to match terrain is not enough. The feet could plant, but the legs stretched and broke. I had to bring the knees and thighs into the solve. More research led to a method that used **raycasts** to drive bone targets from detection deltas, so the whole chain adapted instead of only the contact point. That fixed the idle foot problem.",
+          ],
+        },
+        {
+          heading: "Baking procedure onto animation",
+          paragraphs: [
+            "Idle was not enough. The solver had to survive real locomotion. We landed on a hybrid that kept authored animation as the base and **baked procedural correction on top**—authored motion for performance, procedure for terrain.",
+            "Walking exposed new failures: the solve would sink too deep into the ground or float too high because step height was not accounted for in the procedural pass. With my professor’s guidance and another dive into animation math I was still learning, I optimized the solver so locomotion stayed stable across uneven ground. That closed part one of the research.",
+          ],
+        },
+        {
+          heading: "Arm bracing",
+          paragraphs: [
+            "In the time left, I pushed for arms. Walking beside giant walls, the colossal should brace to feel organic. Material on arm-based procedural animation was thinner than for feet, so I started by treating arms like the foot solve. Hands could brace—but the mesh broke because the bones did not respect stretch limits.",
+            "I changed the approach so arms worked through the **elbows**, pushing back through the chain to keep bracing inside natural arm motion instead of tearing the body. Once bracing held, keeping that solve consistent while the body moved was simpler than the foot locomotion problem had been.",
+          ],
+        },
+        {
+          heading: "Measuring immersion",
+          paragraphs: [
+            "We then ran an **A/B survey**: the same environments with and without the solver. Results favored the procedural build. Immersion and realism scores still took a hit from greybox assets and limited polish—we had deliberately stripped the look so people would judge the IK, not the art, and that tradeoff showed up in the data.",
+            "Even with that caveat, the signal was clear: procedural adaptation on a colossal body **did** change how people rated realism and immersion in the virtual environment. The study answered the question we scoped. The larger design dream—colossal enemies that treat the whole level as dynamic terrain—is still the north star if I get to push this further.",
+          ],
+        },
+        {
+          heading: "What I took from it",
+          paragraphs: [
+            "This was a rare chance to flex technical craft on something I have cared about for years as a fan of colossal encounters. I learned how IK math behaves under animation, how immersion studies think about realism, and how undergraduate research actually runs—including the rigor of **IRB** approval and iterative methods under a grant timeline.",
+            "Most of all, it rewarded going after a problem nobody around me was already solving: notice a gap in how games stage giants, turn it into a measurable question, and build the technical path until the data could speak.",
+          ],
+        },
+      ],
     },
+  ] satisfies Project[],
+  personal: [
     {
       slug: "nebula-game-engine",
       title: "Nebula Game Engine",
