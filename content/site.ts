@@ -356,7 +356,7 @@ export const site = {
       slug: "teaching-assistant",
       title: "Teaching Assistant / Mentor",
       subtitle:
-        "Mentored multiple teams in game design and the production pipelines of modern games.",
+        "Mentored roughly twenty student teams through game design, production, and the craft of finishing a game in four months.",
       cover: {
         src: "/covers/teaching-assistant.png",
         alt: "Public-domain clip art of a video game controller.",
@@ -365,14 +365,55 @@ export const site = {
         src: "/covers/teaching-assistant.png",
         alt: "Public-domain clip art of a video game controller.",
       },
-      role: "Teaching assistant",
+      role: "Teaching assistant & mentor",
       engine: "",
-      platform: "",
-      developmentTime: "",
-      teamSize: "",
-      summary: "",
-      designGoals: [],
-      sections: [],
+      platform: "University of Houston",
+      developmentTime: "4-month course cycles",
+      teamSize: "~20 student projects",
+      summary:
+        "This role taught me a form of game design you only get by teaching it. Students treated me as a mentor from day one, which forced me to widen my craft fast—and to give advice worth the trust they put in me.",
+      designGoals: [
+        "Help each team ship the best game they can inside a four-month production window.",
+        "Teach design judgment: what to keep, what to cut, and what actually plays.",
+        "Give back the spark—treat games as a serious craft students can grow into, not only a class assignment.",
+      ],
+      sections: [
+        {
+          heading: "Learning by teaching",
+          paragraphs: [
+            "The questions started immediately—and they were not polite warmup questions. Students asked about systems I had never touched, genres I had not shipped, and production problems that do not show up in a personal prototype. That pressure was a gift. If I was going to stand in front of eager developers, my answers had to be earned.",
+            "So I studied past the edges of my comfort zone: art-direction lectures, technical practice, pipeline habits, and the boring production details that keep a team alive. Mentoring became a second curriculum for me. The more I helped, the more I had to know—and the more game design itself came into focus.",
+          ],
+        },
+        {
+          heading: "Guiding twenty projects",
+          paragraphs: [
+            "I became the throughline mentor for about **twenty different student projects**, meeting teams where they were and walking them toward a finishable scope. After lectures I stayed late with anyone who wanted extra time. I playtested builds, ran blind QA sessions so they could watch honest first reactions, and sat with them on mechanics, dialogue, and art choices that would actually serve the game.",
+            "I also sat through rounds of prototype presentations—often ten in a stretch—and gave each team dedicated feedback instead of a generic note. The administrative side of being a TA mattered, but it was never the point. Like the professor, I wanted these developers to feel the beauty of making games, learn a professional way to build them, and leave with something that could even move toward commercialization.",
+          ],
+        },
+        {
+          heading: "Production in four months",
+          paragraphs: [
+            "These projects had a hard clock: **four months** to reach production without dying of ambition. We kept a production checklist every team had to confirm, and I went team-to-team checking what they were missing—tools, milestones, owners—so nobody was stuck guessing what “ready” meant.",
+            "A big part of the mentoring was scope discipline: what to build, what not to build, and how to protect the fun while still hitting a shippable vertical. That is design leadership in miniature, repeated twenty times under deadline.",
+          ],
+        },
+        {
+          heading: "Docs, craft, and genres",
+          paragraphs: [
+            "I spent long stretches reviewing **game design documents** and **storyboards**, coaching teams on what makes a GDD useful and what a storyboard should prove if the project wants to stand out. Feedback was rarely “make it cooler.” It was “make this readable, testable, and true to the genre you are in.”",
+            "That meant helping students learn the technical side when they were stuck, and helping them learn taste: what tends to work in a genre, what usually fails, and how to steal the right lessons without copying a hollow shell. Design, production, and craft advice had to travel together or the project stalled.",
+          ],
+        },
+        {
+          heading: "Becoming T-shaped",
+          paragraphs: [
+            "The more students leaned on me as a mentor, the more ambitious I got about my own range. I pushed to understand every major seat on a game team well enough to advise it, while going deeper on **game design**—the center of most of these projects. That is how the role made me more **T-shaped**: broad across disciplines, sharp where the design decisions lived.",
+            "Giving back to that community—and watching real games come out of it—is why I still cherish the work. Teaching game design did not only help them. It made me a more complete developer: someone who can guide a team, hold a production line, and keep learning on purpose because other people’s games depend on it.",
+          ],
+        },
+      ],
     },
   ] satisfies Project[],
   personal: [
