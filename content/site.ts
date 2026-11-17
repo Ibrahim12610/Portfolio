@@ -68,7 +68,7 @@ export const site = {
     portrait: "/ibrahim.jpg",
     about: [
       "I'm a game designer on **Storm Frame Zero** at **Shadows Optional**. I'm also designing **CoilBound**, an indie game.",
-      "I'm graduating from the **University of Houston** with a computer science degree focused on game design and development. I completed paid undergraduate research on procedural animation for colossal entities, and as a teaching assistant I mentor students while they produce games.",
+      "I'm graduating from the **University of Houston** with a computer science degree focused on game design and development. I completed undergraduate research on procedural animation for colossal entities, and as a teaching assistant I mentor students while they produce games.",
       "I care about game development and the community around it. I founded **Coog Interactive** to grow that community in Houston, and my goal is to make games that become global phenomena and show how much this industry matters to culture.",
     ],
     email: "faisalibrahim610@gmail.com",
@@ -422,7 +422,7 @@ export const site = {
       slug: "procedural-animation",
       title: "Research Assistant: Procedural Animation",
       subtitle:
-        "Paid undergraduate research on how procedural animation for colossal entities changes realism and immersion in virtual environments.",
+        "Undergraduate research on how procedural animation for colossal entities changes realism and immersion in virtual environments.",
       cover: {
         src: "/covers/procedural-animation.svg",
         alt: "A pale triangle with a red joint and fading motion lines on a dark field.",
