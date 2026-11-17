@@ -85,6 +85,12 @@ export function ProjectArticle({
         </section>
       ) : null}
 
+      {project.trailer ? (
+        <div className="mt-12 max-w-4xl">
+          <ProjectVideo video={project.trailer} />
+        </div>
+      ) : null}
+
       <figure className="mt-12">
         <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
           <Image

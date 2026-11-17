@@ -37,6 +37,8 @@ export type Project = {
   developmentTime: string;
   teamSize: string;
   summary: string;
+  /** Trailer shown after the summary, before the cover image. */
+  trailer?: ProjectVideo;
   designGoals: string[];
   sections: ProjectSection[];
   links?: { label: string; href: string }[];
@@ -569,7 +571,7 @@ export const site = {
       slug: "babylons-call",
       title: "Babylon's Call",
       subtitle:
-        "A 2D Souls-like platformer with pixel art, set in the Tower of Babel.",
+        "A 2D pixel Souls-like platformer set in the Tower of Babel—led an 8-person team from GDD through a full production ship.",
       cover: {
         src: "/covers/babylons-call.png",
         alt: "Babylon's Call title over a desert ziggurat and ruined city skyline.",
@@ -578,14 +580,72 @@ export const site = {
         src: "/covers/babylons-call.png",
         alt: "Babylon's Call title over a desert ziggurat and ruined city skyline.",
       },
-      role: "Game designer",
-      engine: "",
-      platform: "",
-      developmentTime: "",
-      teamSize: "",
-      summary: "",
-      designGoals: [],
-      sections: [],
+      role: "Team lead & game designer",
+      engine: "2D",
+      platform: "PC (itch.io)",
+      developmentTime: "4 months",
+      teamSize: "8",
+      summary:
+        "My first full production game—course brief from **GDD to ship**. I led a team of **eight** across art, design, and engineering, and steered *Babylon's Call* into a revenge-driven 2D Souls-like: break the prison, climb the tower, and challenge the Storm Lord who corrupted everyone inside.",
+      trailer: {
+        youtubeId: "g4A-jXAi2SE",
+        caption: "Babylon's Call trailer.",
+      },
+      designGoals: [
+        "Ship a complete game with a cross-functional team, not a prototype left on the floor.",
+        "Make movement the star—wall jumps, eight-way dash, and a grappling hook that rewards skill.",
+        "Sell a Souls-like fantasy: punishing enemies, readable windows, and a boss fight worth remembering.",
+      ],
+      links: [
+        {
+          label: "Play on itch.io",
+          href: "https://ibrahim610.itch.io/babylons-call",
+        },
+      ],
+      sections: [
+        {
+          heading: "Leading the production",
+          paragraphs: [
+            "This was the start of making games as a full product. The course asked us to carry a title from a design document through production to something people could play end to end. As **team lead**, I owned the whole spine—art, design, and engineering—keeping eight people pointed at the same game instead of eight separate ones.",
+            "We began with a tight idea: directional dashes. We prototyped early and playtested as soon as something moved. To keep features landing cleanly at scale, I worked with our technical lead to put **clear documentation and version-control standards** in place so everyone could ship work without stepping on each other. Process was part of the design job: if the pipeline breaks, the fantasy never reaches the player.",
+          ],
+        },
+        {
+          heading: "World, story, and look",
+          paragraphs: [
+            "With the prototype alive, we shaped the character and the story around him. I worked with the **art lead** and **narrative lead** so player design and motive stayed one conversation—not art in one room and plot in another. The game settled into a revenge arc: a once-defeated hero breaks free of prison and returns to challenge the tyranny of the **Storm Lord**, who rules the tower and has turned its residents into minions.",
+            "We chose **2D pixel art** because it matched what our art lead could push hardest—and because we wanted an old arcade feel with a darker twist. Think a Mario-shaped movement fantasy dragged into something meaner: climb the Tower of Babel, survive what lives there, earn the rematch.",
+          ],
+        },
+        {
+          heading: "Movement first",
+          paragraphs: [
+            "Design started on the stick. We wanted the controller to feel good before the tower got crowded, so we studied *Hollow Knight* and *Celeste* for weight, wall play, and dash clarity. That research landed on **wall-to-wall jumping**, then kept the prototype’s core as an **eight-way directional dash**.",
+            "To give movement a signature beyond the baselines, we looked at special abilities and locked the **grappling hook**. It was never required to finish a room—but used well, it opened sharper traversal lines and real **skill expression**. Players who invest in the hook get a different game than players who only dash, and that gap was intentional.",
+          ],
+        },
+        {
+          heading: "Enemy design",
+          paragraphs: [
+            "I drafted **concept art** for the enemies myself and worked with the art lead so the mythical creature language of the Tower of Babel had something concrete to build from. The creatures had to feel like they owned the tower: punishing patterns, small windows you learn, and a sense that surviving them is practice for something worse at the top.",
+            "Every encounter was tuned to sell how empowered the tower’s residents are—and, by extension, how empowered the final boss must be. Learning those windows is the fantasy: you don’t overpower the tower on day one; you earn the right to stand in it.",
+          ],
+        },
+        {
+          heading: "Boss as the badge of honor",
+          paragraphs: [
+            "A Souls-like without a memorable boss is half a pitch. I built the finale around **surprise, challenge, and reward**—harsh ability windows the player can still read, clear **animation anticipation** so fairness stays ahead of frustration, and a **dynamic stage shift** where rain hits mid-fight to lift the epic tone.",
+            "The surprise beat forces creativity: abilities that strip easy control unless the player adapts. Beating that fight is meant to feel like a badge—not a checkbox—so the revenge story lands in the player’s hands, not only in the script.",
+          ],
+        },
+        {
+          heading: "What leading taught me",
+          paragraphs: [
+            "Four months of production taught me how to **manage a cross-functional team**: keep art, design, and engineering talking early, project-manage features against scope, and take ideas from every seat without losing the spine of the game. Leadership here meant translation—turning eight voices into one shippable product.",
+            "Leaving the course with a finished *Babylon's Call* mattered more than any single mechanic. It proved I could hold design intent, team process, and a production calendar at the same time—and still deliver a playable revenge climb people can open on itch.io.",
+          ],
+        },
+      ],
     },
     {
       slug: "stealing-christmas",
