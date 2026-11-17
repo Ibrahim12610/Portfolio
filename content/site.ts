@@ -593,8 +593,8 @@ export const site = {
       subtitle:
         "A 2D top-down holiday horror jam game: steal Christmas as the Grinch while Santa hunts you in the dark. Playable in browser—took second place.",
       cover: {
-        src: "/covers/stealing-christmas.png",
-        alt: "Stealing Christmas title over a dark forest and aurora sky.",
+        src: "/covers/stealing-christmas-gameplay.png",
+        alt: "Top-down pixel room: the Grinch near a giant Santa, a Christmas tree, gifts, and remaining objectives on screen.",
       },
       cardCover: {
         src: "/covers/stealing-christmas.png",
