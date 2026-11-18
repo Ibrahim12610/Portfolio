@@ -442,11 +442,11 @@ export const site = {
       trailers: [
         {
           youtubeId: "NdfHJ-mie5Y",
-          caption: "Colossal solver A.",
+          caption: "Colossal A.",
         },
         {
           youtubeId: "mM3cCfmMiII",
-          caption: "Colossal solver B.",
+          caption: "Colossal B.",
         },
       ],
       designGoals: [
@@ -486,7 +486,7 @@ export const site = {
         {
           heading: "Measuring immersion",
           paragraphs: [
-            "We then ran an **A/B survey**: the same environments with and without the solver. Results favored the procedural build. Immersion and realism scores still took a hit from greybox assets and limited polish—we had deliberately stripped the look so people would judge the IK, not the art, and that tradeoff showed up in the data.",
+            "We then ran an **anonymous A/B survey**. Participants watched one of two clips of the same environments—**with** and **without** the procedural layer—without being told which version they had. Both groups answered the **same questions**, so the only controlled difference was whether the colossal body was adapting. Results favored the procedural build. Immersion and realism scores still took a hit from greybox assets and limited polish—we had deliberately stripped the look so people would judge the IK, not the art, and that tradeoff showed up in the data.",
             "Even with that caveat, the signal was clear: procedural adaptation on a colossal body **did** change how people rated realism and immersion in the virtual environment. The study answered the question we scoped. The larger design dream—colossal enemies that treat the whole level as dynamic terrain—is still the north star if I get to push this further.",
           ],
         },
