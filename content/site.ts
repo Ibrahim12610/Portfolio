@@ -40,6 +40,8 @@ export type Project = {
   summary: string;
   /** Trailer shown after the summary, before the cover image. */
   trailer?: ProjectVideo;
+  /** Multiple hero videos (e.g. A/B). Shown side by side when there are two+. */
+  trailers?: ProjectVideo[];
   designGoals: string[];
   sections: ProjectSection[];
   links?: { label: string; href: string }[];
@@ -426,10 +428,6 @@ export const site = {
       title: "Research Assistant: Procedural Animation",
       subtitle:
         "Undergraduate research on how procedural animation for colossal entities changes realism and immersion in virtual environments.",
-      cover: {
-        src: "/covers/procedural-animation.svg",
-        alt: "A pale triangle with a red joint and fading motion lines on a dark field.",
-      },
       cardCover: {
         src: "/covers/procedural-animation.svg",
         alt: "A pale triangle with a red joint and fading motion lines on a dark field.",
@@ -441,6 +439,16 @@ export const site = {
       teamSize: "Faculty-advised solo build",
       summary:
         "Playing games like *God of War* and *Shadow of the Colossus*, I kept noticing that colossal encounters usually live on flat arenas. I wanted to know what happens to realism when a giant **procedurally adapts** to uneven terrain. That curiosity became a funded undergraduate research project with a professor who helped me see it through.",
+      trailers: [
+        {
+          youtubeId: "NdfHJ-mie5Y",
+          caption: "Colossal solver A.",
+        },
+        {
+          youtubeId: "mM3cCfmMiII",
+          caption: "Colossal solver B.",
+        },
+      ],
       designGoals: [
         "Isolate procedural animation as the variable—not a whole game’s worth of noise.",
         "Build an IK solver that keeps colossal feet and arms planted without breaking the body.",

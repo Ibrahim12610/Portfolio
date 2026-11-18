@@ -85,7 +85,19 @@ export function ProjectArticle({
         </section>
       ) : null}
 
-      {project.trailer ? (
+      {project.trailers && project.trailers.length > 0 ? (
+        <div
+          className={`mt-12 grid gap-8 ${
+            project.trailers.length > 1
+              ? "max-w-6xl lg:grid-cols-2"
+              : "max-w-4xl"
+          }`}
+        >
+          {project.trailers.map((video) => (
+            <ProjectVideo key={video.youtubeId} video={video} />
+          ))}
+        </div>
+      ) : project.trailer ? (
         <div className="mt-12 max-w-4xl">
           <ProjectVideo video={project.trailer} />
         </div>
