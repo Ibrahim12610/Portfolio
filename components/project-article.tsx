@@ -105,7 +105,13 @@ export function ProjectArticle({
 
       {project.cover ? (
         <figure className="mt-12">
-          <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
+          <div
+            className={`relative overflow-hidden bg-[#141414] ${
+              project.cover.fit === "contain"
+                ? "aspect-[21/9]"
+                : "aspect-[16/9]"
+            }`}
+          >
             <Image
               src={project.cover.src}
               alt={project.cover.alt}
@@ -113,7 +119,9 @@ export function ProjectArticle({
               unoptimized
               priority
               sizes="(min-width: 1152px) 1088px, 100vw"
-              className="object-cover"
+              className={
+                project.cover.fit === "contain" ? "object-contain" : "object-cover"
+              }
             />
           </div>
           {project.cover.caption ? (

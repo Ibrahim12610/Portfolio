@@ -9,6 +9,8 @@ export type ProjectImage = {
   src: string;
   alt: string;
   caption?: string;
+  /** Defaults to cover. Use contain for wide group photos that should not crop. */
+  fit?: "cover" | "contain";
 };
 
 export type ProjectVideo = {
@@ -295,8 +297,9 @@ export const site = {
       subtitle:
         "A University of Houston community I founded so Houston’s game developers—and the people who want to become them—have a place to gather, learn, and build.",
       cover: {
-        src: "/covers/coog-interactive.png",
-        alt: "Coog Interactive mark: a red and black cougar head dissolving into cyan circuit lines.",
+        src: "/covers/coog-interactive-group.png",
+        alt: "Coog Interactive members posing together in a classroom, many holding up the UH cougar paw.",
+        fit: "contain",
       },
       cardCover: {
         src: "/covers/coog-interactive.png",
