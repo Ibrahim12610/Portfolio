@@ -460,7 +460,7 @@ export const site = {
         alt: "A pale triangle with a red joint and fading motion lines on a dark field.",
       },
       role: "Research assistant",
-      engine: "",
+      engine: "Unreal Engine",
       platform: "University of Houston",
       developmentTime: "Summer research grant",
       teamSize: "Faculty-advised solo build",
