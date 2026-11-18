@@ -497,10 +497,6 @@ export const site = {
       title: "Nebula Game Engine",
       subtitle:
         "A from-scratch C++ engine with a layered architecture, OpenGL/Vulkan-ready rendering, a Qt editor, and a sample platformer built on top of it.",
-      cover: {
-        src: "/covers/nebula-engine.png",
-        alt: "Nebula engine debug view: blue blocks on a red ground with wireframe bounds.",
-      },
       cardCover: {
         src: "/covers/nebula-engine.png",
         alt: "Nebula engine debug view: blue blocks on a red ground with wireframe bounds.",
@@ -512,6 +508,10 @@ export const site = {
       teamSize: "Solo",
       summary:
         "I wanted to understand engines from the inside—not only use one. After a four-person start stalled before features landed, I kept **Nebula** going alone: research first, then a scalable C++ architecture aimed at a small Mario-style game so every system had a real reason to exist.",
+      trailer: {
+        youtubeId: "ljsgRu91WDk",
+        caption: "Nebula Game Engine overview.",
+      },
       designGoals: [
         "Keep engine and game separated through a public header API and enforced layer rules.",
         "Make rendering backend-agnostic so OpenGL can run today and Vulkan can plug in later.",
