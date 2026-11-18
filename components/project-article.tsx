@@ -158,12 +158,19 @@ export function ProjectArticle({
 
       <div className="mt-4 flex flex-col gap-14 pb-16">
         {project.sections.map((section) => {
-          const hasMedia = Boolean(section.video || section.image);
+          const imageBelow =
+            Boolean(section.image) &&
+            (section.imageLayout === "below" || Boolean(section.video));
+          const imageAside =
+            Boolean(section.image) && !imageBelow && !section.video;
+          const hasSideMedia = Boolean(section.video) || imageAside;
 
           return (
             <section
               key={section.heading}
-              className={hasMedia ? "max-w-6xl" : "max-w-3xl"}
+              className={
+                hasSideMedia || imageBelow ? "max-w-6xl" : "max-w-3xl"
+              }
             >
               <h2 className="text-[13px] font-medium uppercase tracking-[0.22em]">
                 {section.heading}
@@ -171,12 +178,12 @@ export function ProjectArticle({
               </h2>
               <div
                 className={
-                  hasMedia
+                  hasSideMedia
                     ? "mt-4 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-start"
-                    : undefined
+                    : "mt-4"
                 }
               >
-                <div>
+                <div className={hasSideMedia ? undefined : "max-w-3xl"}>
                   {section.paragraphs?.map((paragraph) => (
                     <p
                       key={paragraph}
@@ -205,7 +212,7 @@ export function ProjectArticle({
                   ) : null}
                 </div>
                 {section.video ? <ProjectVideo video={section.video} /> : null}
-                {!section.video && section.image ? (
+                {imageAside && section.image ? (
                   <figure className="mt-2 lg:mt-0">
                     <div className="overflow-hidden bg-[#141414]">
                       <Image
@@ -226,16 +233,17 @@ export function ProjectArticle({
                   </figure>
                 ) : null}
               </div>
-              {section.video && section.image ? (
-                <figure className="mt-6 max-w-3xl">
-                  <div className="relative aspect-[16/9] overflow-hidden bg-[#141414]">
+              {imageBelow && section.image ? (
+                <figure className="mt-8">
+                  <div className="overflow-hidden bg-white p-4 sm:p-6">
                     <Image
                       src={section.image.src}
                       alt={section.image.alt}
-                      fill
+                      width={2104}
+                      height={248}
                       unoptimized
-                      sizes="(min-width: 768px) 768px, 100vw"
-                      className="object-cover"
+                      sizes="(min-width: 1152px) 1088px, 100vw"
+                      className="h-auto w-full object-contain"
                     />
                   </div>
                   {section.image.caption ? (
