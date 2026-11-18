@@ -308,7 +308,7 @@ export const site = {
       developmentTime: "Ongoing",
       teamSize: "",
       summary:
-        "Game development is still an underappreciated craft in Houston. I founded **Coog Interactive** because immersive arts deserved a real outlet on campus—and because I wanted a community that treats making games as a serious path, not a side hobby.",
+        "Game development is still an underappreciated craft in Houston. I founded **Coog Interactive** because immersive arts deserved a real outlet on campus—and because I wanted a community that treats making games as a serious path.",
       designGoals: [
         "Give students a lasting home for game development at a university that did not have one.",
         "Build a culture of shipping: teams, skills, and games that transfer into industry work.",
