@@ -349,6 +349,7 @@ export const site = {
           heading: "Industry and the wider city",
           paragraphs: [
             "We also reached past campus into Houston’s working scene—studios and remote industry folks who still call this city home. That opened doors for talks, mentorship, and visibility. Podcasts picked us up. A Houston magazine did too. None of that was the goal by itself; it was proof the community had become real enough for the city to notice.",
+            "That coverage also pointed at what we were shipping: the Coog Interactive site was already hosting about **half a dozen indie games** the collective had supported in a year—**Slime in the Ice Machine** among them. The piece closed on the bet I still hold: game development is alive in Houston if people go looking for it. “If you’re seeking it out, then come find us. …Hopefully we can make it loud enough that we cause a change.”",
             "The moment that still sits with me is simple: members deep in conversation about game development, and people from the industry walking in to speak with them. That was the catalyst I had been trying to start—not a finished hub, but a living room where Houston’s next game developers could find each other.",
           ],
         },
