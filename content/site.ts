@@ -696,7 +696,7 @@ export const site = {
       engine: "2D",
       platform: "Browser (itch.io)",
       developmentTime: "Game jam",
-      teamSize: "Friend group jam team",
+      teamSize: "4",
       summary:
         "A Christmas game jam with friends—built to show what our new community could ship under a hard deadline. Theme was **bells**. We locked a Grinch-eyed horror fantasy fast: hide from Santa, silence the elves, and steal Christmas before the chase catches you.",
       designGoals: [
