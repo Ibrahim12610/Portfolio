@@ -328,8 +328,8 @@ export const site = {
           ],
           image: {
             src: "/covers/coog-early-meeting.jpg",
-            alt: "Early Coog Interactive meeting: Discord open on a laptop and a Production slide on a monitor, with members seated in the room.",
-            caption: "Early production meeting — the Discord and the room, finally full.",
+            alt: "Intro workshop for Coog Interactive: Discord open on a laptop and a Production slide on a monitor, with members seated in the room.",
+            caption: "Intro workshop — getting the first room of people into the craft.",
           },
         },
         {
@@ -340,8 +340,8 @@ export const site = {
           ],
           image: {
             src: "/covers/coog-early-workshop.jpg",
-            alt: "Students in a tiered classroom working in Unity on their laptops during an early Coog Interactive workshop.",
-            caption: "Workshop night — building in-engine, not only talking about games.",
+            alt: "Students in a tiered classroom working on laptops during an early Coog Interactive pixel art workshop.",
+            caption: "Pixel art workshop — teaching the craft that makes the games look like themselves.",
           },
         },
         {
@@ -358,15 +358,14 @@ export const site = {
           ],
           image: {
             src: "/covers/coog-early-playtest.jpg",
-            alt: "Lecture hall event with a Playtest Previous Games by UH Students slide on screen, including Stealing Christmas, while members eat pizza and gather.",
-            caption: "Playtest night — UH student games on the big screen, pizza on the desks.",
+            alt: "Lecture hall event with a Playtest Previous Games by UH Students slide on screen, including Stealing Christmas, while members gather.",
+            caption: "First playtest night — UH student games on the big screen.",
           },
         },
         {
           heading: "Industry and the wider city",
           paragraphs: [
             "We also reached past campus into Houston’s working scene—studios and remote industry folks who still call this city home. That opened doors for talks, mentorship, and visibility. Podcasts picked us up. A Houston magazine did too. None of that was the goal by itself; it was proof the community had become real enough for the city to notice.",
-            "That coverage also pointed at what we were shipping: the Coog Interactive site was already hosting about **half a dozen indie games** the collective had supported in a year—**Slime in the Ice Machine** among them. The piece closed on the bet I still hold: game development is alive in Houston if people go looking for it.",
             "The moment that still sits with me is simple: members deep in conversation about game development, and people from the industry walking in to speak with them. That was the catalyst I had been trying to start—not a finished hub, but a living room where Houston’s next game developers could find each other.",
           ],
           image: {
