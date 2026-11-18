@@ -326,6 +326,11 @@ export const site = {
             "It began the way most communities do: one person with a conviction and an empty room. I believed UH needed to celebrate immersive arts, and that students who cared about games needed somewhere to meet each other.",
             "I started recruiting where the energy already was—the game development class—asking peers to help stand the org up. One classmate said yes. My TA connected me with others who had floated the same dream. I reached out, pulled that group together, and we hit the university’s minimum membership to become an official community. Then the real work started: keep it alive long enough to matter.",
           ],
+          image: {
+            src: "/covers/coog-early-meeting.jpg",
+            alt: "Early Coog Interactive meeting: Discord open on a laptop and a Production slide on a monitor, with members seated in the room.",
+            caption: "Early production meeting — the Discord and the room, finally full.",
+          },
         },
         {
           heading: "A culture worth building",
@@ -333,6 +338,11 @@ export const site = {
             "Marketing alone would not hold people. We needed a culture. I studied what worked elsewhere—conversations with game professors and with university clubs that had already sustained this kind of scene—and kept landing on the same idea: **innovation through making**.",
             "Our model became practical on purpose. Help willing members form teams. Teach them how to finish games. Aim those projects toward work that could eventually be commercialized. The point was never only a social hour. It was a bridge from campus skills into the industry, and a longer bet that Houston could grow into a real hub for game development if someone lit the catalyst and kept feeding it.",
           ],
+          image: {
+            src: "/covers/coog-early-workshop.jpg",
+            alt: "Students in a tiered classroom working in Unity on their laptops during an early Coog Interactive workshop.",
+            caption: "Workshop night — building in-engine, not only talking about games.",
+          },
         },
         {
           heading: "Getting people in the door",
@@ -346,6 +356,11 @@ export const site = {
           paragraphs: [
             "Once we finally had critical mass, I pushed us into **game jams**. That was the breakthrough for engagement—people poured in from across schools, and the energy was too good to spend on a one-off. We followed with more regular events so newcomers were not left excited and stranded: sessions that taught the craft of making games, not only the idea of liking them.",
           ],
+          image: {
+            src: "/covers/coog-early-playtest.jpg",
+            alt: "Lecture hall event with a Playtest Previous Games by UH Students slide on screen, including Stealing Christmas, while members eat pizza and gather.",
+            caption: "Playtest night — UH student games on the big screen, pizza on the desks.",
+          },
         },
         {
           heading: "Industry and the wider city",
