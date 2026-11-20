@@ -140,7 +140,8 @@ export const site = {
     {
       slug: "coilbound",
       title: "CoilBound",
-      subtitle: "A narrative-driven steampunk RPG, made in Unreal Engine 5.",
+      subtitle:
+        "UE5 steampunk RPG — I led creative direction and owned stealth, systems, levels, and story.",
       cover: {
         src: "/covers/coilbound.png",
         alt: "CoilBound title plate: bronze letters on scratched dark metal.",
@@ -221,7 +222,7 @@ export const site = {
       slug: "storm-frame-zero",
       title: "Storm Frame Zero",
       subtitle:
-        "An online co-op roguelike space third-person shooter where you fight to protect Earth from Jupiter.",
+        "Online co-op roguelike TPS — I owned gameplay design: weapons, enemy AI, bosses, and solo-to-co-op combat.",
       cardCover: {
         src: "/covers/storm-frame-zero.png",
         alt: "Stormframe Zero key art: a red mech beside the title and the line When Calisto cries, so do the stars.",
@@ -312,7 +313,7 @@ export const site = {
       slug: "coog-interactive",
       title: "Coog Interactive",
       subtitle:
-        "A University of Houston community I founded so Houston’s game developers—and the people who want to become them—have a place to gather, learn, and build.",
+        "UH game-dev community I founded and led — outreach, workshops, jams, and growing a shipping culture in Houston.",
       cover: {
         src: "/covers/coog-interactive-group.png",
         alt: "Coog Interactive members posing together in a classroom, many holding up the UH cougar paw.",
@@ -410,7 +411,7 @@ export const site = {
       slug: "teaching-assistant",
       title: "Teaching Assistant / Mentor",
       subtitle:
-        "Mentored roughly twenty student teams through game design, production, and the craft of finishing a game in four months.",
+        "Mentored ~20 student teams as TA — GDD reviews, playtests, scope cuts, and shipping games in four months.",
       cover: {
         src: "/covers/teaching-assistant.png",
         alt: "Public-domain clip art of a video game controller.",
@@ -475,7 +476,7 @@ export const site = {
       slug: "procedural-animation",
       title: "Research Assistant: Procedural Animation",
       subtitle:
-        "Undergraduate research on how procedural animation for colossal entities changes realism and immersion in virtual environments.",
+        "Unreal research I built solo — IK solver for colossal bodies plus an anonymous A/B immersion study.",
       cardCover: {
         src: "/covers/procedural-animation.png",
         alt: "Orange colossal robot standing on uneven checkerboard terrain in Unreal Engine.",
@@ -552,7 +553,7 @@ export const site = {
       slug: "nebula-game-engine",
       title: "Nebula Game Engine",
       subtitle:
-        "A from-scratch C++ engine with a layered architecture, OpenGL/Vulkan-ready rendering, a Qt editor, and a sample platformer built on top of it.",
+        "From-scratch C++ engine I built solo — render layers, Qt editor, and a Mario-style sample game on top.",
       cardCover: {
         src: "/covers/nebula-engine.png",
         alt: "Nebula engine debug view: blue blocks on a red ground with wireframe bounds.",
@@ -628,7 +629,7 @@ export const site = {
       slug: "babylons-call",
       title: "Babylon's Call",
       subtitle:
-        "A 2D pixel Souls-like platformer set in the Tower of Babel—led an 8-person team from GDD through a full production ship.",
+        "2D Souls-like I led as team lead & designer — 8 people, GDD to ship: movement, enemies, and boss.",
       cardCover: {
         src: "/covers/babylons-call.png",
         alt: "Babylon's Call title over a desert ziggurat and ruined city skyline.",
@@ -704,7 +705,7 @@ export const site = {
       slug: "stealing-christmas",
       title: "Stealing Christmas",
       subtitle:
-        "A 2D top-down holiday horror jam game: steal Christmas as the Grinch while Santa hunts you in the dark. Playable in browser—took second place.",
+        "Holiday horror jam (2nd place) — I owned the design lock: Grinch stealth, bells alerts, sound, and vents.",
       cover: {
         src: "/covers/stealing-christmas-gameplay.png",
         alt: "Top-down pixel room: the Grinch near a giant Santa, a Christmas tree, gifts, and remaining objectives on screen.",
