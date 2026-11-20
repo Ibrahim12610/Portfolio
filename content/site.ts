@@ -256,6 +256,11 @@ export const site = {
             "To make combat feel battle-forward—and like humanity’s last stand against an army—I focused first on how enemies work **together**. The first pass had units scan nearby allies and sync attack patterns inside a radius. It read as coordinated, but it was too expensive to run.",
             "I replaced that with a **grid-based check** that runs less often, then rebuilt coordination around tactics driven by ally count. The result plays less like loose mobs and more like a hive: denser groups change behavior, pressure stays readable, and the fight sells an organized force without torching performance.",
           ],
+          image: {
+            src: "/covers/storm-frame-coordination.png",
+            alt: "Player mech facing a coordinated pack of red enemy units among asteroids, each marked with targeting icons.",
+            caption: "Enemy coordination — hive-mind unit behavior, not a crowd of loners.",
+          },
         },
         {
           heading: "Co-op extensions",
@@ -273,7 +278,7 @@ export const site = {
           image: {
             src: "/covers/storm-frame-boss.png",
             alt: "Third-person boss fight: player mech facing a larger red-accented enemy mech at 38m in a dark arena.",
-            caption: "Boss encounter — silhouette and kit built to feel like a force, not a bigger grunt.",
+            caption: "Boss scale — a towering silhouette meant to hit overwhelm before the fight even starts.",
           },
         },
         {
@@ -292,7 +297,7 @@ export const site = {
           image: {
             src: "/covers/storm-frame-loadout.png",
             alt: "Storm Frame Zero loadout screen with shoulder and arm weapon slots, weapon stats, and mech stats beside the player mech.",
-            caption: "Loadout screen — modular weapons tuned for mix-and-match runs.",
+            caption: "Modular loadouts — roguelike rewards built around mix-and-match weapon picks.",
           },
         },
         {
