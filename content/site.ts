@@ -270,6 +270,11 @@ export const site = {
             "Every enemy is designed as a **unit inside a squad**, not a standalone punch bag. Dogfighters follow a wing leader and commit in fast, precise groups. Each enemy type gets its own AI profile so like units—and mixed packs—can still coordinate cleanly as the roster scales.",
             "For the first boss I wanted empowerment: their mega-weapon, not another large grunt. An early pass with a small attack set felt thin in playtests. I grew the silhouette to sell authority, then widened the kit—**rocket barrages**, **rifle barrages**, and a **phase-transition stun blast**—so the fight feels expansive and shows the boss harnessing the same storm players fear.",
           ],
+          image: {
+            src: "/covers/storm-frame-boss.png",
+            alt: "Third-person boss fight: player mech facing a larger red-accented enemy mech at 38m in a dark arena.",
+            caption: "Boss encounter — silhouette and kit built to feel like a force, not a bigger grunt.",
+          },
         },
         {
           heading: "Roguelike missions",
@@ -284,6 +289,11 @@ export const site = {
             "Because the game is a roguelike, weapon design had to stay **modular**: many tools that stay fun alone and stronger in mix-and-match loadouts. That work lived in design docs and repeated playthroughs—tuning type values, cutting weak options, and sharpening keepers like missile variants and the sniper until each run’s kit felt distinct.",
             "Balancing solo against co-op meant raising encounter pressure for more players without flattening the fights that should stay special. Bosses, for example, **scale dynamically with player count** instead of simply spawning a second boss, so the encounter stays unique while the difficulty still tracks the party.",
           ],
+          image: {
+            src: "/covers/storm-frame-loadout.png",
+            alt: "Storm Frame Zero loadout screen with shoulder and arm weapon slots, weapon stats, and mech stats beside the player mech.",
+            caption: "Loadout screen — modular weapons tuned for mix-and-match runs.",
+          },
         },
         {
           heading: "Production",
