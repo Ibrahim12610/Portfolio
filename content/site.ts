@@ -152,7 +152,7 @@ export const site = {
       role: "Creative director & lead designer",
       engine: "Unreal Engine 5",
       platform: "PC",
-      developmentTime: "4 months (ongoing)",
+      developmentTime: "3 months (ongoing)",
       teamSize: "3",
       summary:
         "On a team of three, I set the creative direction for **CoilBound** and own the design of its stealth, systems, levels, and story. The throughline is simple rules that give players room to invent their own solutions.",
