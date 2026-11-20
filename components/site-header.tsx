@@ -5,9 +5,14 @@ import { usePathname } from "next/navigation";
 import { site } from "@/content/site";
 
 const tabs = [
-  { href: "/", label: "Work", id: "work" },
-  { href: "/resume", label: "Resume", id: "resume" },
-  { href: "/contact", label: "Contact", id: "contact" },
+  { href: "/", label: "Work", id: "work", external: false },
+  {
+    href: site.resume.pdf || "/resume",
+    label: "Resume",
+    id: "resume",
+    external: Boolean(site.resume.pdf),
+  },
+  { href: "/contact", label: "Contact", id: "contact", external: false },
 ] as const;
 
 function currentTab(pathname: string) {
@@ -15,6 +20,11 @@ function currentTab(pathname: string) {
   if (pathname.startsWith("/contact")) return "contact";
   return "work";
 }
+
+const tabClass = (isActive: boolean) =>
+  `border-b pb-0.5 text-[12px] font-medium uppercase tracking-[0.18em] transition-colors hover:border-mark ${
+    isActive ? "border-mark" : "border-transparent"
+  }`;
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -36,15 +46,24 @@ export function SiteHeader() {
               const isActive = active === tab.id;
               return (
                 <li key={tab.id}>
-                  <Link
-                    href={tab.href}
-                    aria-current={isActive ? "page" : undefined}
-                    className={`border-b pb-0.5 text-[12px] font-medium uppercase tracking-[0.18em] transition-colors hover:border-mark ${
-                      isActive ? "border-mark" : "border-transparent"
-                    }`}
-                  >
-                    {tab.label}
-                  </Link>
+                  {tab.external ? (
+                    <a
+                      href={tab.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={tabClass(false)}
+                    >
+                      {tab.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={tab.href}
+                      aria-current={isActive ? "page" : undefined}
+                      className={tabClass(isActive)}
+                    >
+                      {tab.label}
+                    </Link>
+                  )}
                 </li>
               );
             })}

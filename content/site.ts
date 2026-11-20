@@ -93,7 +93,7 @@ export const site = {
     ],
   },
   resume: {
-    pdf: "",
+    pdf: "/resume.pdf",
     summary:
       "A one-line resume summary goes here. Say what you do and the kind of work you want next.",
     experience: [
