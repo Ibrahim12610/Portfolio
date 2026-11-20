@@ -222,10 +222,6 @@ export const site = {
       title: "Storm Frame Zero",
       subtitle:
         "An online co-op roguelike space third-person shooter where you fight to protect Earth from Jupiter.",
-      cover: {
-        src: "/covers/harbor.svg",
-        alt: "A red sun sitting on a black horizon, with three pale posts in the foreground.",
-      },
       cardCover: {
         src: "/covers/storm-frame-zero.png",
         alt: "Stormframe Zero key art: a red mech beside the title and the line When Calisto cries, so do the stars.",
@@ -237,6 +233,10 @@ export const site = {
       teamSize: "5",
       summary:
         "At **Shadows Optional**, a five-person indie team, I own the gameplay design of **Storm Frame Zero**—weapons, enemy AI, boss encounters, and how that fight holds up from solo runs to online co-op. On a studio this size I also script systems, weigh in on art direction, and help keep production on a testable schedule.",
+      trailer: {
+        youtubeId: "W8IKet2pCiI",
+        caption: "Storm Frame Zero gameplay.",
+      },
       designGoals: [
         "Make every fight feel like a coordinated enemy force, not a crowd of solo attackers.",
         "Extend single-player combat into co-op without diluting pressure or unique encounter beats.",
