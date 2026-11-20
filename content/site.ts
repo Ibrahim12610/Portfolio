@@ -620,7 +620,7 @@ export const site = {
       },
       role: "Team lead & game designer",
       engine: "Unity",
-      platform: "PC (itch.io)",
+      platform: "PC",
       developmentTime: "4 months",
       teamSize: "8",
       summary:
