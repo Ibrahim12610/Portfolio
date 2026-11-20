@@ -456,8 +456,8 @@ export const site = {
       subtitle:
         "Undergraduate research on how procedural animation for colossal entities changes realism and immersion in virtual environments.",
       cardCover: {
-        src: "/covers/procedural-animation.svg",
-        alt: "A pale triangle with a red joint and fading motion lines on a dark field.",
+        src: "/covers/procedural-animation.png",
+        alt: "Orange colossal robot standing on uneven checkerboard terrain in Unreal Engine.",
       },
       role: "Research assistant",
       engine: "Unreal Engine",
