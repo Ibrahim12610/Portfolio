@@ -467,7 +467,7 @@ export const site = {
       },
       role: "Research assistant",
       engine: "Unreal Engine",
-      platform: "University of Houston",
+      platform: "PC",
       developmentTime: "Summer research grant",
       teamSize: "Faculty-advised solo build",
       summary:
