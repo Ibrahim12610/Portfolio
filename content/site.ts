@@ -73,7 +73,7 @@ export const site = {
     month: "Nov",
     year: "2026",
     role: "Game designer",
-    disciplines: ["Gameplay designer", "Level designer"],
+    disciplines: [],
     portrait: "/ibrahim.jpg",
     about: [
       "I'm a game designer on **Storm Frame Zero** at **Shadows Optional**. I'm also designing **CoilBound**, an indie game.",
