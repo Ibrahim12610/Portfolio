@@ -483,7 +483,7 @@ export const site = {
       role: "Research assistant",
       engine: "Unreal Engine",
       platform: "PC",
-      developmentTime: "Summer research grant",
+      developmentTime: "3 months",
       teamSize: "Faculty-advised solo build",
       summary:
         "Playing games like *God of War* and *Shadow of the Colossus*, I kept noticing that colossal encounters usually live on flat arenas. I wanted to know what happens to realism when a giant **procedurally adapts** to uneven terrain. That curiosity became a funded undergraduate research project with a professor who helped me see it through.",
