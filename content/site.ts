@@ -222,7 +222,7 @@ export const site = {
       slug: "storm-frame-zero",
       title: "Storm Frame Zero",
       subtitle:
-        "Online co-op roguelike TPS — I owned gameplay design: weapons, enemy AI, bosses, and solo-to-co-op combat.",
+        "Online co-op roguelike TPS — I owned gameplay design: weapons, enemy AI, bosses, and solo-to-co-op gameplay.",
       cardCover: {
         src: "/covers/storm-frame-zero.png",
         alt: "Stormframe Zero key art: a red mech beside the title and the line When Calisto cries, so do the stars.",
