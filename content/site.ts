@@ -229,7 +229,7 @@ export const site = {
       role: "Game designer",
       engine: "Unity",
       platform: "PC",
-      developmentTime: "11 months (ongoing)",
+      developmentTime: "10 months",
       teamSize: "5",
       summary:
         "At **Shadows Optional**, a five-person indie team, I own the gameplay design of **Storm Frame Zero**—weapons, enemy AI, boss encounters, and how that fight holds up from solo runs to online co-op. On a studio this size I also script systems, weigh in on art direction, and help keep production on a testable schedule.",
